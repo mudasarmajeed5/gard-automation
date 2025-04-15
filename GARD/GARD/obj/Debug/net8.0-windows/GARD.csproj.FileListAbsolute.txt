@@ -1,0 +1,266 @@
+C:\Users\Mudassar\source\repos\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+C:\Users\Mudassar\source\repos\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+C:\Users\Mudassar\source\repos\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+C:\Users\Mudassar\source\repos\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+C:\Users\Mudassar\source\repos\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+C:\Users\Mudassar\source\repos\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+C:\Users\Mudassar\source\repos\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\obj\Debug\net8.0-windows\GARD.Properties.Resources.resources
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\DynamicData.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\ReactiveUI.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\Splat.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\System.Reactive.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\Wawis khan\OneDrive\Desktop\GARD\GARD\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+C:\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+C:\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+C:\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+C:\GARD\GARD\bin\Debug\net8.0-windows\DynamicData.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\ReactiveUI.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\Splat.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\System.Reactive.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.Properties.Resources.resources
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+C:\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+C:\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+C:\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+D:\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+D:\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+D:\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+D:\GARD\GARD\bin\Debug\net8.0-windows\DynamicData.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\ReactiveUI.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\Splat.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\System.Reactive.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Json.dll
+D:\GARD\GARD\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.Properties.Resources.resources
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+D:\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+D:\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+D:\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\DynamicData.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\ReactiveUI.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\Splat.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Reactive.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.Properties.Resources.resources
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.dll
+C:\Users\Mudassar\Desktop\GARD\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.WindowsForms.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\DynamicData.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.WindowsForms.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\ReactiveUI.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\Splat.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\System.Reactive.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Json.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.Properties.Resources.resources
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+D:\Downloads\GARD v0.1.0\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\Assets\Google.png
+D:\Downloads\GARD v0.1.0\GARD\GARD\bin\Debug\net8.0-windows\Assets\SQLServer.png
+C:\GARD\GARD\bin\Debug\net8.0-windows\Assets\Google.png
+C:\GARD\GARD\bin\Debug\net8.0-windows\Assets\SQLServer.png
+C:\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.dll
+C:\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\Assets\Google.png
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\Assets\SQLServer.png
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\DynamicData.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\ReactiveUI.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\Splat.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Reactive.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.Properties.Resources.resources
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+C:\Users\mudas\Music\GARD\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\Assets\Google.png
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\Assets\SQLServer.png
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\DynamicData.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.WindowsForms.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\ReactiveUI.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\Splat.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Reactive.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\GARD\GARD\GARD\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.Properties.Resources.resources
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+C:\GARD\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\Assets\Google.png
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\Assets\SQLServer.png
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\GARD.exe
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\GARD.deps.json
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\GARD.runtimeconfig.json
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\GARD.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\GARD.pdb
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\DynamicData.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\MetroSet UI.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\OxyPlot.WindowsForms.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\ReactiveUI.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\Splat.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\System.Reactive.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\System.Text.Json.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.AssemblyReference.cache
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.Form1.resources
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.Properties.Resources.resources
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.GenerateResource.cache
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfoInputs.cache
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.AssemblyInfo.cs
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.CoreCompileInputs.cache
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.csproj.Up2Date
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\refint\GARD.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
