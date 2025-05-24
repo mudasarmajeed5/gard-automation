@@ -264,3 +264,4 @@ D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.pdb
 D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.genruntimeconfig.cache
 D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\ref\GARD.dll
 D:\CODE\C SHARP\EmailAutomation\GARD\GARD\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\CODE\C SHARP\EmailAutomation\GARD\GARD\obj\Debug\net8.0-windows\GARD.sourcelink.json

@@ -31,7 +31,7 @@ namespace GARD
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             metroSetControlBox1 = new MetroSetControlBox();
             metroSetTabControl1 = new MetroSetTabControl();
             tabPage6 = new TabPage();
@@ -108,19 +108,18 @@ namespace GARD
             addCampaign = new MetroSetButton();
             campaignSearch = new TextBox();
             tabPage4 = new TabPage();
-            button9 = new Button();
-            button8 = new Button();
+            sub_status = new ComboBox();
+            updateSubscriber = new Button();
+            addSubscriber = new Button();
             button7 = new Button();
-            button6 = new Button();
+            btnDeleteSubscriber = new Button();
             label39 = new Label();
             label19 = new Label();
             label18 = new Label();
-            metroSetComboBox1 = new MetroSetComboBox();
+            filterSubs = new MetroSetComboBox();
             dgvsubscribers = new DataGridView();
-            dtpSubscribedAt = new DateTimePicker();
-            txtUserID = new MetroSetTextBox();
-            txtemail = new MetroSetTextBox();
-            txtname = new MetroSetTextBox();
+            sub_email = new MetroSetTextBox();
+            sub_name = new MetroSetTextBox();
             tabPage5 = new TabPage();
             label17 = new Label();
             panel1 = new Panel();
@@ -1186,48 +1185,59 @@ namespace GARD
             // 
             // tabPage4
             // 
-            tabPage4.Controls.Add(button9);
-            tabPage4.Controls.Add(button8);
+            tabPage4.Controls.Add(sub_status);
+            tabPage4.Controls.Add(updateSubscriber);
+            tabPage4.Controls.Add(addSubscriber);
             tabPage4.Controls.Add(button7);
-            tabPage4.Controls.Add(button6);
+            tabPage4.Controls.Add(btnDeleteSubscriber);
             tabPage4.Controls.Add(label39);
             tabPage4.Controls.Add(label19);
             tabPage4.Controls.Add(label18);
-            tabPage4.Controls.Add(metroSetComboBox1);
+            tabPage4.Controls.Add(filterSubs);
             tabPage4.Controls.Add(dgvsubscribers);
-            tabPage4.Controls.Add(dtpSubscribedAt);
-            tabPage4.Controls.Add(txtUserID);
-            tabPage4.Controls.Add(txtemail);
-            tabPage4.Controls.Add(txtname);
+            tabPage4.Controls.Add(sub_email);
+            tabPage4.Controls.Add(sub_name);
             tabPage4.Location = new Point(4, 42);
             tabPage4.Name = "tabPage4";
             tabPage4.Size = new Size(1342, 634);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Manage Subscribers";
             // 
-            // button9
+            // sub_status
             // 
-            button9.BackColor = Color.CornflowerBlue;
-            button9.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button9.ForeColor = Color.White;
-            button9.Location = new Point(281, 252);
-            button9.Name = "button9";
-            button9.Size = new Size(144, 38);
-            button9.TabIndex = 21;
-            button9.Text = "Update Info";
-            button9.UseVisualStyleBackColor = false;
+            sub_status.FormattingEnabled = true;
+            sub_status.Items.AddRange(new object[] { "active", "inactive", "bounced" });
+            sub_status.Location = new Point(369, 185);
+            sub_status.Name = "sub_status";
+            sub_status.Size = new Size(297, 28);
+            sub_status.TabIndex = 22;
             // 
-            // button8
+            // updateSubscriber
             // 
-            button8.BackColor = Color.Green;
-            button8.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(119, 252);
-            button8.Name = "button8";
-            button8.Size = new Size(144, 38);
-            button8.TabIndex = 20;
-            button8.Text = "Add Subscriber";
-            button8.UseVisualStyleBackColor = false;
+            updateSubscriber.BackColor = Color.CornflowerBlue;
+            updateSubscriber.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            updateSubscriber.ForeColor = Color.White;
+            updateSubscriber.Location = new Point(281, 252);
+            updateSubscriber.Name = "updateSubscriber";
+            updateSubscriber.Size = new Size(144, 38);
+            updateSubscriber.TabIndex = 21;
+            updateSubscriber.Text = "Update Subscriber";
+            updateSubscriber.UseVisualStyleBackColor = false;
+            updateSubscriber.Click += updateSubscriber_Click;
+            // 
+            // addSubscriber
+            // 
+            addSubscriber.BackColor = Color.Green;
+            addSubscriber.Cursor = Cursors.Hand;
+            addSubscriber.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            addSubscriber.ForeColor = Color.White;
+            addSubscriber.Location = new Point(119, 252);
+            addSubscriber.Name = "addSubscriber";
+            addSubscriber.Size = new Size(144, 38);
+            addSubscriber.TabIndex = 20;
+            addSubscriber.Text = "Add Subscriber";
+            addSubscriber.UseVisualStyleBackColor = false;
+            addSubscriber.Click += addSubscriber_Click;
             // 
             // button7
             // 
@@ -1241,24 +1251,25 @@ namespace GARD
             button7.Text = "Clear Fields";
             button7.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnDeleteSubscriber
             // 
-            button6.BackColor = Color.IndianRed;
-            button6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(445, 252);
-            button6.Name = "button6";
-            button6.Size = new Size(144, 38);
-            button6.TabIndex = 18;
-            button6.Text = "Delete Subscriber";
-            button6.UseVisualStyleBackColor = false;
+            btnDeleteSubscriber.BackColor = Color.IndianRed;
+            btnDeleteSubscriber.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDeleteSubscriber.ForeColor = Color.White;
+            btnDeleteSubscriber.Location = new Point(445, 252);
+            btnDeleteSubscriber.Name = "btnDeleteSubscriber";
+            btnDeleteSubscriber.Size = new Size(144, 38);
+            btnDeleteSubscriber.TabIndex = 18;
+            btnDeleteSubscriber.Text = "Delete Subscriber";
+            btnDeleteSubscriber.UseVisualStyleBackColor = false;
+            btnDeleteSubscriber.Click += btnDeleteSubscriber_Click;
             // 
             // label39
             // 
             label39.AutoSize = true;
             label39.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label39.ForeColor = Color.IndianRed;
-            label39.Location = new Point(119, 70);
+            label39.Location = new Point(102, 70);
             label39.Name = "label39";
             label39.Size = new Size(55, 39);
             label39.TabIndex = 17;
@@ -1286,34 +1297,35 @@ namespace GARD
             label18.TabIndex = 15;
             label18.Text = "Subscriber Details";
             // 
-            // metroSetComboBox1
+            // filterSubs
             // 
-            metroSetComboBox1.AllowDrop = true;
-            metroSetComboBox1.ArrowColor = Color.FromArgb(150, 150, 150);
-            metroSetComboBox1.BackColor = Color.Transparent;
-            metroSetComboBox1.BackgroundColor = Color.FromArgb(238, 238, 238);
-            metroSetComboBox1.BorderColor = Color.FromArgb(150, 150, 150);
-            metroSetComboBox1.CausesValidation = false;
-            metroSetComboBox1.DisabledBackColor = Color.FromArgb(204, 204, 204);
-            metroSetComboBox1.DisabledBorderColor = Color.FromArgb(155, 155, 155);
-            metroSetComboBox1.DisabledForeColor = Color.FromArgb(136, 136, 136);
-            metroSetComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
-            metroSetComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            metroSetComboBox1.Font = new Font("Microsoft Sans Serif", 11F);
-            metroSetComboBox1.FormattingEnabled = true;
-            metroSetComboBox1.IsDerivedStyle = true;
-            metroSetComboBox1.ItemHeight = 20;
-            metroSetComboBox1.Items.AddRange(new object[] { "All", "Subscribed", "Unsubscribed", "Bounced" });
-            metroSetComboBox1.Location = new Point(975, 315);
-            metroSetComboBox1.Name = "metroSetComboBox1";
-            metroSetComboBox1.SelectedItemBackColor = Color.FromArgb(65, 177, 225);
-            metroSetComboBox1.SelectedItemForeColor = Color.White;
-            metroSetComboBox1.Size = new Size(244, 26);
-            metroSetComboBox1.Style = MetroSet_UI.Enums.Style.Light;
-            metroSetComboBox1.StyleManager = null;
-            metroSetComboBox1.TabIndex = 14;
-            metroSetComboBox1.ThemeAuthor = "Narwin";
-            metroSetComboBox1.ThemeName = "MetroLite";
+            filterSubs.AllowDrop = true;
+            filterSubs.ArrowColor = Color.FromArgb(150, 150, 150);
+            filterSubs.BackColor = Color.Transparent;
+            filterSubs.BackgroundColor = Color.FromArgb(238, 238, 238);
+            filterSubs.BorderColor = Color.FromArgb(150, 150, 150);
+            filterSubs.CausesValidation = false;
+            filterSubs.DisabledBackColor = Color.FromArgb(204, 204, 204);
+            filterSubs.DisabledBorderColor = Color.FromArgb(155, 155, 155);
+            filterSubs.DisabledForeColor = Color.FromArgb(136, 136, 136);
+            filterSubs.DrawMode = DrawMode.OwnerDrawFixed;
+            filterSubs.DropDownStyle = ComboBoxStyle.DropDownList;
+            filterSubs.Font = new Font("Microsoft Sans Serif", 11F);
+            filterSubs.FormattingEnabled = true;
+            filterSubs.IsDerivedStyle = true;
+            filterSubs.ItemHeight = 20;
+            filterSubs.Items.AddRange(new object[] { "All", "Active", "Inactive", "Bounced" });
+            filterSubs.Location = new Point(975, 315);
+            filterSubs.Name = "filterSubs";
+            filterSubs.SelectedItemBackColor = Color.FromArgb(65, 177, 225);
+            filterSubs.SelectedItemForeColor = Color.White;
+            filterSubs.Size = new Size(244, 26);
+            filterSubs.Style = MetroSet_UI.Enums.Style.Light;
+            filterSubs.StyleManager = null;
+            filterSubs.TabIndex = 14;
+            filterSubs.ThemeAuthor = "Narwin";
+            filterSubs.ThemeName = "MetroLite";
+            filterSubs.SelectedIndexChanged += filterSubs_SelectedIndexChanged;
             // 
             // dgvsubscribers
             // 
@@ -1330,106 +1342,65 @@ namespace GARD
             dgvsubscribers.Size = new Size(1100, 240);
             dgvsubscribers.TabIndex = 13;
             // 
-            // dtpSubscribedAt
+            // sub_email
             // 
-            dtpSubscribedAt.Location = new Point(373, 185);
-            dtpSubscribedAt.Margin = new Padding(2);
-            dtpSubscribedAt.Name = "dtpSubscribedAt";
-            dtpSubscribedAt.Size = new Size(297, 27);
-            dtpSubscribedAt.TabIndex = 6;
+            sub_email.AutoCompleteCustomSource = null;
+            sub_email.AutoCompleteMode = AutoCompleteMode.None;
+            sub_email.AutoCompleteSource = AutoCompleteSource.None;
+            sub_email.BorderColor = Color.FromArgb(155, 155, 155);
+            sub_email.DisabledBackColor = Color.FromArgb(204, 204, 204);
+            sub_email.DisabledBorderColor = Color.FromArgb(155, 155, 155);
+            sub_email.DisabledForeColor = Color.FromArgb(136, 136, 136);
+            sub_email.Font = new Font("Microsoft Sans Serif", 10F);
+            sub_email.HoverColor = Color.FromArgb(102, 102, 102);
+            sub_email.Image = null;
+            sub_email.IsDerivedStyle = true;
+            sub_email.Lines = null;
+            sub_email.Location = new Point(119, 185);
+            sub_email.Margin = new Padding(2);
+            sub_email.MaxLength = 32767;
+            sub_email.Multiline = false;
+            sub_email.Name = "sub_email";
+            sub_email.ReadOnly = false;
+            sub_email.Size = new Size(222, 29);
+            sub_email.Style = MetroSet_UI.Enums.Style.Light;
+            sub_email.StyleManager = null;
+            sub_email.TabIndex = 2;
+            sub_email.TextAlign = HorizontalAlignment.Left;
+            sub_email.ThemeAuthor = "Narwin";
+            sub_email.ThemeName = "MetroLite";
+            sub_email.UseSystemPasswordChar = false;
+            sub_email.WatermarkText = "Enter your email";
             // 
-            // txtUserID
+            // sub_name
             // 
-            txtUserID.AutoCompleteCustomSource = null;
-            txtUserID.AutoCompleteMode = AutoCompleteMode.None;
-            txtUserID.AutoCompleteSource = AutoCompleteSource.None;
-            txtUserID.BorderColor = Color.FromArgb(155, 155, 155);
-            txtUserID.DisabledBackColor = Color.FromArgb(204, 204, 204);
-            txtUserID.DisabledBorderColor = Color.FromArgb(155, 155, 155);
-            txtUserID.DisabledForeColor = Color.FromArgb(136, 136, 136);
-            txtUserID.Font = new Font("Microsoft Sans Serif", 10F);
-            txtUserID.HoverColor = Color.FromArgb(102, 102, 102);
-            txtUserID.Image = null;
-            txtUserID.IsDerivedStyle = true;
-            txtUserID.Lines = null;
-            txtUserID.Location = new Point(373, 138);
-            txtUserID.Margin = new Padding(2);
-            txtUserID.MaxLength = 32767;
-            txtUserID.Multiline = false;
-            txtUserID.Name = "txtUserID";
-            txtUserID.ReadOnly = true;
-            txtUserID.Size = new Size(222, 29);
-            txtUserID.Style = MetroSet_UI.Enums.Style.Light;
-            txtUserID.StyleManager = null;
-            txtUserID.TabIndex = 5;
-            txtUserID.Text = "User Id";
-            txtUserID.TextAlign = HorizontalAlignment.Left;
-            txtUserID.ThemeAuthor = "Narwin";
-            txtUserID.ThemeName = "MetroLite";
-            txtUserID.UseSystemPasswordChar = false;
-            txtUserID.WatermarkText = "Enter User Id";
-            // 
-            // txtemail
-            // 
-            txtemail.AutoCompleteCustomSource = null;
-            txtemail.AutoCompleteMode = AutoCompleteMode.None;
-            txtemail.AutoCompleteSource = AutoCompleteSource.None;
-            txtemail.BorderColor = Color.FromArgb(155, 155, 155);
-            txtemail.DisabledBackColor = Color.FromArgb(204, 204, 204);
-            txtemail.DisabledBorderColor = Color.FromArgb(155, 155, 155);
-            txtemail.DisabledForeColor = Color.FromArgb(136, 136, 136);
-            txtemail.Font = new Font("Microsoft Sans Serif", 10F);
-            txtemail.HoverColor = Color.FromArgb(102, 102, 102);
-            txtemail.Image = null;
-            txtemail.IsDerivedStyle = true;
-            txtemail.Lines = null;
-            txtemail.Location = new Point(119, 185);
-            txtemail.Margin = new Padding(2);
-            txtemail.MaxLength = 32767;
-            txtemail.Multiline = false;
-            txtemail.Name = "txtemail";
-            txtemail.ReadOnly = false;
-            txtemail.Size = new Size(222, 29);
-            txtemail.Style = MetroSet_UI.Enums.Style.Light;
-            txtemail.StyleManager = null;
-            txtemail.TabIndex = 2;
-            txtemail.Text = "Email";
-            txtemail.TextAlign = HorizontalAlignment.Left;
-            txtemail.ThemeAuthor = "Narwin";
-            txtemail.ThemeName = "MetroLite";
-            txtemail.UseSystemPasswordChar = false;
-            txtemail.WatermarkText = "Enter your email";
-            // 
-            // txtname
-            // 
-            txtname.AutoCompleteCustomSource = null;
-            txtname.AutoCompleteMode = AutoCompleteMode.None;
-            txtname.AutoCompleteSource = AutoCompleteSource.None;
-            txtname.BorderColor = Color.FromArgb(155, 155, 155);
-            txtname.DisabledBackColor = Color.FromArgb(204, 204, 204);
-            txtname.DisabledBorderColor = Color.FromArgb(155, 155, 155);
-            txtname.DisabledForeColor = Color.FromArgb(136, 136, 136);
-            txtname.Font = new Font("Microsoft Sans Serif", 10F);
-            txtname.HoverColor = Color.FromArgb(102, 102, 102);
-            txtname.Image = null;
-            txtname.IsDerivedStyle = true;
-            txtname.Lines = null;
-            txtname.Location = new Point(119, 138);
-            txtname.Margin = new Padding(2);
-            txtname.MaxLength = 32767;
-            txtname.Multiline = false;
-            txtname.Name = "txtname";
-            txtname.ReadOnly = false;
-            txtname.Size = new Size(222, 29);
-            txtname.Style = MetroSet_UI.Enums.Style.Light;
-            txtname.StyleManager = null;
-            txtname.TabIndex = 1;
-            txtname.Text = "Name";
-            txtname.TextAlign = HorizontalAlignment.Left;
-            txtname.ThemeAuthor = "Narwin";
-            txtname.ThemeName = "MetroLite";
-            txtname.UseSystemPasswordChar = false;
-            txtname.WatermarkText = "Enter the Name";
+            sub_name.AutoCompleteCustomSource = null;
+            sub_name.AutoCompleteMode = AutoCompleteMode.None;
+            sub_name.AutoCompleteSource = AutoCompleteSource.None;
+            sub_name.BorderColor = Color.FromArgb(155, 155, 155);
+            sub_name.DisabledBackColor = Color.FromArgb(204, 204, 204);
+            sub_name.DisabledBorderColor = Color.FromArgb(155, 155, 155);
+            sub_name.DisabledForeColor = Color.FromArgb(136, 136, 136);
+            sub_name.Font = new Font("Microsoft Sans Serif", 10F);
+            sub_name.HoverColor = Color.FromArgb(102, 102, 102);
+            sub_name.Image = null;
+            sub_name.IsDerivedStyle = true;
+            sub_name.Lines = null;
+            sub_name.Location = new Point(119, 138);
+            sub_name.Margin = new Padding(2);
+            sub_name.MaxLength = 32767;
+            sub_name.Multiline = false;
+            sub_name.Name = "sub_name";
+            sub_name.ReadOnly = false;
+            sub_name.Size = new Size(222, 29);
+            sub_name.Style = MetroSet_UI.Enums.Style.Light;
+            sub_name.StyleManager = null;
+            sub_name.TabIndex = 1;
+            sub_name.TextAlign = HorizontalAlignment.Left;
+            sub_name.ThemeAuthor = "Narwin";
+            sub_name.ThemeName = "MetroLite";
+            sub_name.UseSystemPasswordChar = false;
+            sub_name.WatermarkText = "Enter the Name";
             // 
             // tabPage5
             // 
@@ -1661,9 +1632,9 @@ namespace GARD
             // 
             // Column6
             // 
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.ForeColor = SystemColors.GradientActiveCaption;
-            Column6.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.ForeColor = SystemColors.GradientActiveCaption;
+            Column6.DefaultCellStyle = dataGridViewCellStyle2;
             Column6.HeaderText = "Action";
             Column6.MinimumWidth = 6;
             Column6.Name = "Column6";
@@ -2103,11 +2074,9 @@ namespace GARD
         private LinkLabel linkLabel1;
         private Label label17;
         private DataGridView dgvsubscribers;
-        private DateTimePicker dtpSubscribedAt;
-        private MetroSetTextBox txtUserID;
-        private MetroSetTextBox txtemail;
-        private MetroSetTextBox txtname;
-        private MetroSetComboBox metroSetComboBox1;
+        private MetroSetTextBox sub_email;
+        private MetroSetTextBox sub_name;
+        private MetroSetComboBox filterSubs;
         private Label label18;
         private Label label19;
         private Label label24;
@@ -2149,12 +2118,13 @@ namespace GARD
         private MetroSetLabel metroSetLabel3;
         private Label label38;
         private Label label39;
-        private Button button6;
+        private Button btnDeleteSubscriber;
         private Button button7;
-        private Button button8;
-        private Button button9;
+        private Button addSubscriber;
+        private Button updateSubscriber;
         private MetroSetPanel metroSetPanel9;
         private Label label41;
         private Label label40;
+        private ComboBox sub_status;
     }
 }
