@@ -30,7 +30,7 @@ namespace GARD
                     allSubscribers = subscribers;
                     dgvsubscribers.DataSource = allSubscribers;
                     dgvsubscribers.DataSource = subscribers;
-                    dgvsubscribers.Columns["id"].HeaderText = "Subscriber ID";
+                    dgvsubscribers.Columns["id"].HeaderText = "User ID";
                     dgvsubscribers.Columns["name"].HeaderText = "Name";
                     dgvsubscribers.Columns["email"].HeaderText = "Email";
                     dgvsubscribers.Columns["subscribed_at"].HeaderText = "Subscribed At";
@@ -57,7 +57,7 @@ namespace GARD
         }
 
 
-        async void addSubscriberToDatabase(string status, string name, string email)
+        private async Task addSubscriberToDatabase(string status, string name, string email)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -82,7 +82,7 @@ namespace GARD
             }
         }
 
-        async void updateSubscriberInDatabase()
+        private async Task updateSubscriberInDatabase()
         {
             if (currentSubscriberId == -1)
             {
@@ -118,7 +118,7 @@ namespace GARD
             }
         }
 
-        async void deleteSubscriberInDatabase()
+        private async Task deleteSubscriberInDatabase()
         {
             if (currentSubscriberId == -1)
             {
@@ -149,8 +149,9 @@ namespace GARD
             }
         }
 
-        private void addSubscriber_Click(object sender, EventArgs e)
+        private async void addSubscriber_Click(object sender, EventArgs e)
         {
+            addSubscriber.Enabled = false;
             string status = sub_status.Text.Trim();
             string name = sub_name.Text.Trim();
             string email = sub_email.Text.Trim();
@@ -179,16 +180,22 @@ namespace GARD
                 return;
             }
 
-            addSubscriberToDatabase(status, name, email);
+            await addSubscriberToDatabase(status, name, email);
+            addSubscriber.Enabled = true;
         }
 
-        private void updateSubscriber_Click(object sender, EventArgs e)
+        private async void updateSubscriber_Click(object sender, EventArgs e)
         {
-            updateSubscriberInDatabase();
+            updateSubscriber.Enabled = false;
+            await updateSubscriberInDatabase();
+            updateSubscriber.Enabled = true;
         }
-        private void btnDeleteSubscriber_Click(object sender, EventArgs e)
+        private async void btnDeleteSubscriber_Click(object sender, EventArgs e)
         {
-            deleteSubscriberInDatabase();
+            // disable the button after clicking to prevent double clicks
+            btnDeleteSubscriber.Enabled = false;
+            await deleteSubscriberInDatabase();
+            btnDeleteSubscriber.Enabled = true;
         }
 
         private void filterSubs_SelectedIndexChanged(object sender, EventArgs e)
@@ -209,6 +216,12 @@ namespace GARD
             }
         }
 
+        private void clearFields_Click(object sender, EventArgs e)
+        {
+            sub_email.Text = "";
+            sub_name.Text = "";
+            sub_status.Text = "active";
+        }
     }
     public class Subscriber
     {

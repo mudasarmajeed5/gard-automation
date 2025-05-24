@@ -111,7 +111,7 @@ namespace GARD
             sub_status = new ComboBox();
             updateSubscriber = new Button();
             addSubscriber = new Button();
-            button7 = new Button();
+            clearFields = new Button();
             btnDeleteSubscriber = new Button();
             label39 = new Label();
             label19 = new Label();
@@ -1188,7 +1188,7 @@ namespace GARD
             tabPage4.Controls.Add(sub_status);
             tabPage4.Controls.Add(updateSubscriber);
             tabPage4.Controls.Add(addSubscriber);
-            tabPage4.Controls.Add(button7);
+            tabPage4.Controls.Add(clearFields);
             tabPage4.Controls.Add(btnDeleteSubscriber);
             tabPage4.Controls.Add(label39);
             tabPage4.Controls.Add(label19);
@@ -1239,17 +1239,18 @@ namespace GARD
             addSubscriber.UseVisualStyleBackColor = false;
             addSubscriber.Click += addSubscriber_Click;
             // 
-            // button7
+            // clearFields
             // 
-            button7.BackColor = Color.CadetBlue;
-            button7.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(608, 252);
-            button7.Name = "button7";
-            button7.Size = new Size(144, 38);
-            button7.TabIndex = 19;
-            button7.Text = "Clear Fields";
-            button7.UseVisualStyleBackColor = false;
+            clearFields.BackColor = Color.CadetBlue;
+            clearFields.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            clearFields.ForeColor = Color.White;
+            clearFields.Location = new Point(608, 252);
+            clearFields.Name = "clearFields";
+            clearFields.Size = new Size(144, 38);
+            clearFields.TabIndex = 19;
+            clearFields.Text = "Clear Fields";
+            clearFields.UseVisualStyleBackColor = false;
+            clearFields.Click += clearFields_Click;
             // 
             // btnDeleteSubscriber
             // 
@@ -2119,7 +2120,7 @@ namespace GARD
         private Label label38;
         private Label label39;
         private Button btnDeleteSubscriber;
-        private Button button7;
+        private Button clearFields;
         private Button addSubscriber;
         private Button updateSubscriber;
         private MetroSetPanel metroSetPanel9;
