@@ -128,11 +128,10 @@ namespace GARD
             label13 = new Label();
             label12 = new Label();
             SendCampaignButton = new Button();
-            label11 = new Label();
+            show_total_sent = new Label();
             ApplyFilterButton = new Button();
             cbStatusFilter = new MetroSetComboBox();
             EmailLogs = new DataGridView();
-            progressBar = new MetroSetProgressBar();
             sending_to_label = new MetroSetLabel();
             dtpTo = new DateTimePicker();
             dtpFrom = new DateTimePicker();
@@ -1383,11 +1382,10 @@ namespace GARD
             tabPage5.Controls.Add(label13);
             tabPage5.Controls.Add(label12);
             tabPage5.Controls.Add(SendCampaignButton);
-            tabPage5.Controls.Add(label11);
+            tabPage5.Controls.Add(show_total_sent);
             tabPage5.Controls.Add(ApplyFilterButton);
             tabPage5.Controls.Add(cbStatusFilter);
             tabPage5.Controls.Add(EmailLogs);
-            tabPage5.Controls.Add(progressBar);
             tabPage5.Controls.Add(sending_to_label);
             tabPage5.Controls.Add(dtpTo);
             tabPage5.Controls.Add(dtpFrom);
@@ -1503,7 +1501,7 @@ namespace GARD
             label15.AutoSize = true;
             label15.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label15.ForeColor = Color.Black;
-            label15.Location = new Point(416, 532);
+            label15.Location = new Point(457, 533);
             label15.Name = "label15";
             label15.Size = new Size(14, 20);
             label15.TabIndex = 19;
@@ -1514,7 +1512,7 @@ namespace GARD
             label14.AutoSize = true;
             label14.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.Black;
-            label14.Location = new Point(286, 533);
+            label14.Location = new Point(311, 534);
             label14.Name = "label14";
             label14.Size = new Size(14, 20);
             label14.TabIndex = 18;
@@ -1525,22 +1523,22 @@ namespace GARD
             label13.AutoSize = true;
             label13.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.SteelBlue;
-            label13.Location = new Point(429, 534);
+            label13.Location = new Point(467, 535);
             label13.Name = "label13";
             label13.Size = new Size(140, 20);
             label13.TabIndex = 17;
-            label13.Text = "Total Bounced:1";
+            label13.Text = "Total Bounced:0";
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.Maroon;
-            label12.Location = new Point(300, 535);
+            label12.Location = new Point(333, 535);
             label12.Name = "label12";
             label12.Size = new Size(118, 20);
             label12.TabIndex = 16;
-            label12.Text = "Total Failed:1";
+            label12.Text = "Total Failed:0";
             // 
             // SendCampaignButton
             // 
@@ -1555,16 +1553,16 @@ namespace GARD
             SendCampaignButton.UseVisualStyleBackColor = false;
             SendCampaignButton.Click += SendCampaignButton_Click;
             // 
-            // label11
+            // show_total_sent
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.Green;
-            label11.Location = new Point(182, 534);
-            label11.Name = "label11";
-            label11.Size = new Size(107, 20);
-            label11.TabIndex = 14;
-            label11.Text = "Total Sent:1";
+            show_total_sent.AutoSize = true;
+            show_total_sent.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            show_total_sent.ForeColor = Color.Green;
+            show_total_sent.Location = new Point(179, 535);
+            show_total_sent.Name = "show_total_sent";
+            show_total_sent.Size = new Size(107, 20);
+            show_total_sent.TabIndex = 14;
+            show_total_sent.Text = "Total Sent:0";
             // 
             // ApplyFilterButton
             // 
@@ -1616,29 +1614,6 @@ namespace GARD
             EmailLogs.RowHeadersWidth = 51;
             EmailLogs.Size = new Size(843, 218);
             EmailLogs.TabIndex = 9;
-            // 
-            // progressBar
-            // 
-            progressBar.BackgroundColor = Color.FromArgb(238, 238, 238);
-            progressBar.BorderColor = Color.FromArgb(238, 238, 238);
-            progressBar.DisabledBackColor = Color.FromArgb(238, 238, 238);
-            progressBar.DisabledBorderColor = Color.FromArgb(238, 238, 238);
-            progressBar.DisabledProgressColor = Color.FromArgb(120, 65, 177, 225);
-            progressBar.IsDerivedStyle = true;
-            progressBar.Location = new Point(89, 530);
-            progressBar.Maximum = 100;
-            progressBar.Minimum = 0;
-            progressBar.Name = "progressBar";
-            progressBar.Orientation = MetroSet_UI.Enums.ProgressOrientation.Horizontal;
-            progressBar.ProgressColor = Color.FromArgb(65, 177, 225);
-            progressBar.Size = new Size(75, 23);
-            progressBar.Style = MetroSet_UI.Enums.Style.Light;
-            progressBar.StyleManager = null;
-            progressBar.TabIndex = 8;
-            progressBar.Text = "metroSetProgressBar1";
-            progressBar.ThemeAuthor = "Narwin";
-            progressBar.ThemeName = "MetroLite";
-            progressBar.Value = 0;
             // 
             // sending_to_label
             // 
@@ -2028,14 +2003,13 @@ namespace GARD
         private PictureBox pictureBox6;
         private MetroSetLabel lblTitle;
         private DataGridView EmailLogs;
-        private MetroSetProgressBar progressBar;
         private MetroSetLabel sending_to_label;
         private DateTimePicker dtpTo;
         private DateTimePicker dtpFrom;
         private MetroSetComboBox cbStatusFilter;
         private MetroSetButton metroSetButton1;
         private Button SendCampaignButton;
-        private Label label11;
+        private Label show_total_sent;
         private Button ApplyFilterButton;
         private Label label13;
         private Label label12;

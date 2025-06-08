@@ -643,11 +643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Downloads\\gard-automation\\GARD\\GARD\\GARD.csproj",
+      "projectUniqueName": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj",
       "projectName": "GARD",
-      "projectPath": "D:\\Downloads\\gard-automation\\GARD\\GARD\\GARD.csproj",
+      "projectPath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj",
       "packagesPath": "C:\\Users\\mudas\\.nuget\\packages\\",
-      "outputPath": "D:\\Downloads\\gard-automation\\GARD\\GARD\\obj\\",
+      "outputPath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\VisualStudioSDK's\\NuGetPackages"

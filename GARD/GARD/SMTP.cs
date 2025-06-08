@@ -181,8 +181,8 @@ namespace GARD
                     {
                         PropertyNameCaseInsensitive = true
                     });
-
                     EmailLogs.DataSource = emailLogs;
+                    show_total_sent.Text = $"Total Sent: {emailLogs?.Count ?? 0}";
                 }
                 else
                 {

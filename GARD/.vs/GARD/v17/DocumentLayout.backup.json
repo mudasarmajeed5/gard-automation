@@ -1,13 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Downloads\\gard-automation\\GARD\\",
+  "WorkspaceRootPath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|d:\\downloads\\gard-automation\\gard\\gard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|d:\\code\\c sharp\\emailautomation\\gard-automation\\gard\\gard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|solutionrelative:gard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|d:\\code\\c sharp\\emailautomation\\gard-automation\\gard\\gard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|solutionrelative:gard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|d:\\downloads\\gard-automation\\gard\\gard\\datamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|d:\\code\\c sharp\\emailautomation\\gard-automation\\gard\\gard\\smtp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|solutionrelative:gard\\smtp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|d:\\code\\c sharp\\emailautomation\\gard-automation\\gard\\gard\\charthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|solutionrelative:gard\\charthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|d:\\code\\c sharp\\emailautomation\\gard-automation\\gard\\gard\\datamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EA9D7EA-2766-4546-9A7C-7ED01EAFB79E}|GARD\\GARD.csproj|solutionrelative:gard\\datamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,20 +30,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Downloads\\gard-automation\\GARD\\GARD\\Form1.cs",
+              "DocumentMoniker": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\Form1.cs",
               "RelativeDocumentMoniker": "GARD\\Form1.cs",
-              "ToolTip": "D:\\Downloads\\gard-automation\\GARD\\GARD\\Form1.cs",
-              "RelativeToolTip": "GARD\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ToolTip": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\Form1.cs*",
+              "RelativeToolTip": "GARD\\Form1.cs*",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwH0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T11:16:31.841Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SMTP.cs",
+              "DocumentMoniker": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\SMTP.cs",
+              "RelativeDocumentMoniker": "GARD\\SMTP.cs",
+              "ToolTip": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\SMTP.cs",
+              "RelativeToolTip": "GARD\\SMTP.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAuwLsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:24:04.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\Form1.cs",
+              "RelativeDocumentMoniker": "GARD\\Form1.cs",
+              "ToolTip": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\Form1.cs [Design]*",
+              "RelativeToolTip": "GARD\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:22:52.34Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChartHelper.cs",
+              "DocumentMoniker": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\ChartHelper.cs",
+              "RelativeDocumentMoniker": "GARD\\ChartHelper.cs",
+              "ToolTip": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\ChartHelper.cs",
+              "RelativeToolTip": "GARD\\ChartHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:19:44.318Z",
               "EditorCaption": ""
             },
             {
@@ -40,16 +90,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DataModels.cs",
-              "DocumentMoniker": "D:\\Downloads\\gard-automation\\GARD\\GARD\\DataModels.cs",
+              "DocumentMoniker": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\DataModels.cs",
               "RelativeDocumentMoniker": "GARD\\DataModels.cs",
-              "ToolTip": "D:\\Downloads\\gard-automation\\GARD\\GARD\\DataModels.cs",
+              "ToolTip": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\DataModels.cs",
               "RelativeToolTip": "GARD\\DataModels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T07:15:11.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T07:15:11.07Z"
             }
           ]
         }

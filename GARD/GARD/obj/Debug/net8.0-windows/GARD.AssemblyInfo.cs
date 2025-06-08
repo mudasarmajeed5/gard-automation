@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GARD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d8eeb67eeeaa355e248f447285cc0695013e65a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GARD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GARD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
