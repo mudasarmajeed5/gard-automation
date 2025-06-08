@@ -530,7 +530,6 @@ namespace GARD
             pass_login.PlaceholderText = "Password";
             pass_login.Size = new Size(201, 25);
             pass_login.TabIndex = 12;
-            pass_login.TextChanged += textBox1_TextChanged;
             // 
             // user_login
             // 

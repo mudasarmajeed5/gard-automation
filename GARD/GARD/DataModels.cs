@@ -3,7 +3,7 @@
     public class Subscriber
     {
         public int id { get; set; }
-        public int admin_id { get; set; }  // Add this
+        public int admin_id { get; set; } 
         public string name { get; set; }
         public string email { get; set; }
         public string subscribed_at { get; set; }
@@ -14,7 +14,7 @@
     public class Campaign
     {
         public int id { get; set; }
-        public int admin_id { get; set; }  // Add this
+        public int admin_id { get; set; } 
         public string campaign_name { get; set; }
         public string content { get; set; }
         public string sent_at { get; set; }
