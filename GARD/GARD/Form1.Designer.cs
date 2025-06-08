@@ -31,22 +31,21 @@ namespace GARD
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             metroSetControlBox1 = new MetroSetControlBox();
-            metroSetTabControl1 = new MetroSetTabControl();
+            PageTabs = new MetroSetTabControl();
             tabPage6 = new TabPage();
             metroSetLabel3 = new MetroSetLabel();
             label37 = new Label();
             label36 = new Label();
             metroSetPanel8 = new MetroSetPanel();
-            linkLabel2 = new LinkLabel();
+            login_sign = new LinkLabel();
             label31 = new Label();
-            textBox7 = new TextBox();
-            checkBox2 = new CheckBox();
+            pass_sign = new TextBox();
+            show_sign = new CheckBox();
             label32 = new Label();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            button5 = new Button();
+            email_sign = new TextBox();
+            user_sign = new TextBox();
+            signup_sign = new Button();
             label33 = new Label();
             pictureBox8 = new PictureBox();
             label34 = new Label();
@@ -55,8 +54,8 @@ namespace GARD
             label16 = new Label();
             metroSetLabel1 = new MetroSetLabel();
             metroSetPanel1 = new MetroSetPanel();
-            textBox1 = new TextBox();
-            textBox5 = new TextBox();
+            pass_login = new TextBox();
+            user_login = new TextBox();
             linkLabel1 = new LinkLabel();
             button2 = new Button();
             checkBox1 = new CheckBox();
@@ -93,20 +92,16 @@ namespace GARD
             label5 = new Label();
             pictureBox2 = new PictureBox();
             tabPage3 = new TabPage();
+            campaigns_table = new DataGridView();
             panelCampaignEditor = new MetroSetPanel();
             saveCampaign = new MetroSetButton();
-            chkEnableHtml = new MetroSetCheckBox();
             campaignContent = new TextBox();
             label1 = new Label();
             txtCampaignName = new TextBox();
-            campaigns_table = new DataGridView();
-            ID = new DataGridViewTextBoxColumn();
-            campaign_name = new DataGridViewTextBoxColumn();
-            status = new DataGridViewTextBoxColumn();
-            created_at = new DataGridViewTextBoxColumn();
             tableLayoutPanel1 = new TableLayoutPanel();
-            addCampaign = new MetroSetButton();
+            deletecampaign = new Button();
             campaignSearch = new TextBox();
+            addCampaign = new MetroSetButton();
             tabPage4 = new TabPage();
             sub_status = new ComboBox();
             updateSubscriber = new Button();
@@ -121,26 +116,24 @@ namespace GARD
             sub_email = new MetroSetTextBox();
             sub_name = new MetroSetTextBox();
             tabPage5 = new TabPage();
+            label43 = new Label();
+            label42 = new Label();
+            Currently_Sending_Email = new TextBox();
+            SentProgress = new ProgressBar();
+            target_audience = new MetroSetComboBox();
+            UserCampaigns = new MetroSetComboBox();
             label17 = new Label();
-            panel1 = new Panel();
             label15 = new Label();
             label14 = new Label();
             label13 = new Label();
             label12 = new Label();
-            button4 = new Button();
+            SendCampaignButton = new Button();
             label11 = new Label();
-            button3 = new Button();
+            ApplyFilterButton = new Button();
             cbStatusFilter = new MetroSetComboBox();
-            txtSearch = new MetroSetTextBox();
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewButtonColumn();
+            EmailLogs = new DataGridView();
             progressBar = new MetroSetProgressBar();
-            metroSetLabel4 = new MetroSetLabel();
+            sending_to_label = new MetroSetLabel();
             dtpTo = new DateTimePicker();
             dtpFrom = new DateTimePicker();
             lblTitle = new MetroSetLabel();
@@ -148,20 +141,21 @@ namespace GARD
             label41 = new Label();
             label40 = new Label();
             metroSetPanel9 = new MetroSetPanel();
+            label44 = new Label();
             label30 = new Label();
             label26 = new Label();
-            textBox2 = new TextBox();
-            metroSetButton2 = new MetroSetButton();
-            textBox3 = new TextBox();
-            metroSetCheckBox1 = new MetroSetCheckBox();
+            smtp_email = new TextBox();
+            Save_Smtp_Settings = new MetroSetButton();
+            smtp_password = new TextBox();
+            smtp_ssl = new MetroSetCheckBox();
             label27 = new Label();
             label29 = new Label();
             label28 = new Label();
-            textBox6 = new TextBox();
-            textBox4 = new TextBox();
+            smtp_port = new TextBox();
+            smtp_server = new TextBox();
             GOOGLEIMG = new PictureBox();
             SQLIMG = new PictureBox();
-            metroSetTabControl1.SuspendLayout();
+            PageTabs.SuspendLayout();
             tabPage6.SuspendLayout();
             metroSetPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -182,13 +176,13 @@ namespace GARD
             metroSetPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabPage3.SuspendLayout();
-            panelCampaignEditor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)campaigns_table).BeginInit();
+            panelCampaignEditor.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvsubscribers).BeginInit();
             tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)EmailLogs).BeginInit();
             tabPage7.SuspendLayout();
             metroSetPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GOOGLEIMG).BeginInit();
@@ -221,34 +215,34 @@ namespace GARD
             metroSetControlBox1.ThemeAuthor = "Narwin";
             metroSetControlBox1.ThemeName = "MetroLite";
             // 
-            // metroSetTabControl1
+            // PageTabs
             // 
-            metroSetTabControl1.AnimateEasingType = MetroSet_UI.Enums.EasingType.CubeOut;
-            metroSetTabControl1.AnimateTime = 200;
-            metroSetTabControl1.BackgroundColor = Color.White;
-            metroSetTabControl1.Controls.Add(tabPage6);
-            metroSetTabControl1.Controls.Add(tabPage1);
-            metroSetTabControl1.Controls.Add(tabPage2);
-            metroSetTabControl1.Controls.Add(tabPage3);
-            metroSetTabControl1.Controls.Add(tabPage4);
-            metroSetTabControl1.Controls.Add(tabPage5);
-            metroSetTabControl1.Controls.Add(tabPage7);
-            metroSetTabControl1.IsDerivedStyle = true;
-            metroSetTabControl1.ItemSize = new Size(100, 38);
-            metroSetTabControl1.Location = new Point(1, 82);
-            metroSetTabControl1.Name = "metroSetTabControl1";
-            metroSetTabControl1.SelectedIndex = 4;
-            metroSetTabControl1.SelectedTextColor = Color.White;
-            metroSetTabControl1.Size = new Size(1350, 680);
-            metroSetTabControl1.SizeMode = TabSizeMode.Fixed;
-            metroSetTabControl1.Speed = 100;
-            metroSetTabControl1.Style = MetroSet_UI.Enums.Style.Light;
-            metroSetTabControl1.StyleManager = null;
-            metroSetTabControl1.TabIndex = 1;
-            metroSetTabControl1.ThemeAuthor = "Narwin";
-            metroSetTabControl1.ThemeName = "MetroLite";
-            metroSetTabControl1.UnselectedTextColor = Color.Gray;
-            metroSetTabControl1.UseAnimation = false;
+            PageTabs.AnimateEasingType = MetroSet_UI.Enums.EasingType.CubeOut;
+            PageTabs.AnimateTime = 200;
+            PageTabs.BackgroundColor = Color.White;
+            PageTabs.Controls.Add(tabPage6);
+            PageTabs.Controls.Add(tabPage1);
+            PageTabs.Controls.Add(tabPage2);
+            PageTabs.Controls.Add(tabPage3);
+            PageTabs.Controls.Add(tabPage4);
+            PageTabs.Controls.Add(tabPage5);
+            PageTabs.Controls.Add(tabPage7);
+            PageTabs.IsDerivedStyle = true;
+            PageTabs.ItemSize = new Size(100, 38);
+            PageTabs.Location = new Point(1, 82);
+            PageTabs.Name = "PageTabs";
+            PageTabs.SelectedIndex = 5;
+            PageTabs.SelectedTextColor = Color.White;
+            PageTabs.Size = new Size(1350, 680);
+            PageTabs.SizeMode = TabSizeMode.Fixed;
+            PageTabs.Speed = 100;
+            PageTabs.Style = MetroSet_UI.Enums.Style.Light;
+            PageTabs.StyleManager = null;
+            PageTabs.TabIndex = 1;
+            PageTabs.ThemeAuthor = "Narwin";
+            PageTabs.ThemeName = "MetroLite";
+            PageTabs.UnselectedTextColor = Color.Gray;
+            PageTabs.UseAnimation = false;
             // 
             // tabPage6
             // 
@@ -302,14 +296,14 @@ namespace GARD
             metroSetPanel8.BackgroundColor = Color.White;
             metroSetPanel8.BorderColor = Color.FromArgb(150, 150, 150);
             metroSetPanel8.BorderThickness = 5;
-            metroSetPanel8.Controls.Add(linkLabel2);
+            metroSetPanel8.Controls.Add(login_sign);
             metroSetPanel8.Controls.Add(label31);
-            metroSetPanel8.Controls.Add(textBox7);
-            metroSetPanel8.Controls.Add(checkBox2);
+            metroSetPanel8.Controls.Add(pass_sign);
+            metroSetPanel8.Controls.Add(show_sign);
             metroSetPanel8.Controls.Add(label32);
-            metroSetPanel8.Controls.Add(textBox8);
-            metroSetPanel8.Controls.Add(textBox9);
-            metroSetPanel8.Controls.Add(button5);
+            metroSetPanel8.Controls.Add(email_sign);
+            metroSetPanel8.Controls.Add(user_sign);
+            metroSetPanel8.Controls.Add(signup_sign);
             metroSetPanel8.Controls.Add(label33);
             metroSetPanel8.Controls.Add(pictureBox8);
             metroSetPanel8.Controls.Add(label34);
@@ -325,19 +319,20 @@ namespace GARD
             metroSetPanel8.ThemeAuthor = "Narwin";
             metroSetPanel8.ThemeName = "MetroLite";
             // 
-            // linkLabel2
+            // login_sign
             // 
-            linkLabel2.ActiveLinkColor = Color.White;
-            linkLabel2.AutoSize = true;
-            linkLabel2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel2.ForeColor = Color.Black;
-            linkLabel2.LinkColor = Color.Black;
-            linkLabel2.Location = new Point(267, 422);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(48, 18);
-            linkLabel2.TabIndex = 16;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Log in";
+            login_sign.ActiveLinkColor = Color.White;
+            login_sign.AutoSize = true;
+            login_sign.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            login_sign.ForeColor = Color.Black;
+            login_sign.LinkColor = Color.Black;
+            login_sign.Location = new Point(267, 422);
+            login_sign.Name = "login_sign";
+            login_sign.Size = new Size(48, 18);
+            login_sign.TabIndex = 16;
+            login_sign.TabStop = true;
+            login_sign.Text = "Log in";
+            login_sign.LinkClicked += login_sign_LinkClicked;
             // 
             // label31
             // 
@@ -350,26 +345,27 @@ namespace GARD
             label31.TabIndex = 15;
             label31.Text = "Already have an account ?";
             // 
-            // textBox7
+            // pass_sign
             // 
-            textBox7.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox7.Location = new Point(168, 291);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(201, 25);
-            textBox7.TabIndex = 14;
-            textBox7.Text = "Password";
+            pass_sign.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            pass_sign.Location = new Point(168, 291);
+            pass_sign.Name = "pass_sign";
+            pass_sign.PlaceholderText = "Password";
+            pass_sign.Size = new Size(201, 25);
+            pass_sign.TabIndex = 14;
             // 
-            // checkBox2
+            // show_sign
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Font = new Font("Imprint MT Shadow", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox2.ForeColor = Color.Black;
-            checkBox2.Location = new Point(230, 329);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(130, 22);
-            checkBox2.TabIndex = 9;
-            checkBox2.Text = "Show Password";
-            checkBox2.UseVisualStyleBackColor = true;
+            show_sign.AutoSize = true;
+            show_sign.Font = new Font("Imprint MT Shadow", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            show_sign.ForeColor = Color.Black;
+            show_sign.Location = new Point(230, 329);
+            show_sign.Name = "show_sign";
+            show_sign.Size = new Size(130, 22);
+            show_sign.TabIndex = 9;
+            show_sign.Text = "Show Password";
+            show_sign.UseVisualStyleBackColor = true;
+            show_sign.CheckedChanged += show_sign_CheckedChanged;
             // 
             // label32
             // 
@@ -382,35 +378,36 @@ namespace GARD
             label32.TabIndex = 13;
             label32.Text = "Password";
             // 
-            // textBox8
+            // email_sign
             // 
-            textBox8.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox8.Location = new Point(168, 245);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(201, 25);
-            textBox8.TabIndex = 12;
-            textBox8.Text = "Email";
+            email_sign.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            email_sign.Location = new Point(168, 245);
+            email_sign.Name = "email_sign";
+            email_sign.PlaceholderText = "Email";
+            email_sign.Size = new Size(201, 25);
+            email_sign.TabIndex = 12;
             // 
-            // textBox9
+            // user_sign
             // 
-            textBox9.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox9.Location = new Point(168, 194);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(201, 25);
-            textBox9.TabIndex = 11;
-            textBox9.Text = "Username";
+            user_sign.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            user_sign.Location = new Point(168, 194);
+            user_sign.Name = "user_sign";
+            user_sign.PlaceholderText = "Username";
+            user_sign.Size = new Size(201, 25);
+            user_sign.TabIndex = 11;
             // 
-            // button5
+            // signup_sign
             // 
-            button5.BackColor = Color.SteelBlue;
-            button5.Font = new Font("Impact", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.Black;
-            button5.Location = new Point(60, 367);
-            button5.Name = "button5";
-            button5.Size = new Size(309, 42);
-            button5.TabIndex = 7;
-            button5.Text = "Sign up";
-            button5.UseVisualStyleBackColor = false;
+            signup_sign.BackColor = Color.SteelBlue;
+            signup_sign.Font = new Font("Impact", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            signup_sign.ForeColor = Color.Black;
+            signup_sign.Location = new Point(60, 367);
+            signup_sign.Name = "signup_sign";
+            signup_sign.Size = new Size(309, 42);
+            signup_sign.TabIndex = 7;
+            signup_sign.Text = "Sign up";
+            signup_sign.UseVisualStyleBackColor = false;
+            signup_sign.Click += signup_sign_Click;
             // 
             // label33
             // 
@@ -504,8 +501,8 @@ namespace GARD
             metroSetPanel1.BackgroundColor = Color.White;
             metroSetPanel1.BorderColor = Color.FromArgb(150, 150, 150);
             metroSetPanel1.BorderThickness = 5;
-            metroSetPanel1.Controls.Add(textBox1);
-            metroSetPanel1.Controls.Add(textBox5);
+            metroSetPanel1.Controls.Add(pass_login);
+            metroSetPanel1.Controls.Add(user_login);
             metroSetPanel1.Controls.Add(linkLabel1);
             metroSetPanel1.Controls.Add(button2);
             metroSetPanel1.Controls.Add(checkBox1);
@@ -525,23 +522,24 @@ namespace GARD
             metroSetPanel1.ThemeAuthor = "Narwin";
             metroSetPanel1.ThemeName = "MetroLite";
             // 
-            // textBox1
+            // pass_login
             // 
-            textBox1.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(159, 261);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(201, 25);
-            textBox1.TabIndex = 12;
-            textBox1.Text = "Password";
+            pass_login.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            pass_login.Location = new Point(159, 261);
+            pass_login.Name = "pass_login";
+            pass_login.PlaceholderText = "Password";
+            pass_login.Size = new Size(201, 25);
+            pass_login.TabIndex = 12;
+            pass_login.TextChanged += textBox1_TextChanged;
             // 
-            // textBox5
+            // user_login
             // 
-            textBox5.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(159, 211);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(201, 25);
-            textBox5.TabIndex = 11;
-            textBox5.Text = "Username";
+            user_login.Font = new Font("Garamond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            user_login.Location = new Point(159, 211);
+            user_login.Name = "user_login";
+            user_login.PlaceholderText = "Username";
+            user_login.Size = new Size(201, 25);
+            user_login.TabIndex = 11;
             // 
             // linkLabel1
             // 
@@ -579,6 +577,7 @@ namespace GARD
             checkBox1.TabIndex = 9;
             checkBox1.Text = "Show Password";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // button1
             // 
@@ -591,6 +590,7 @@ namespace GARD
             button1.TabIndex = 7;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
@@ -984,14 +984,25 @@ namespace GARD
             // 
             // tabPage3
             // 
-            tabPage3.Controls.Add(panelCampaignEditor);
             tabPage3.Controls.Add(campaigns_table);
+            tabPage3.Controls.Add(panelCampaignEditor);
             tabPage3.Controls.Add(tableLayoutPanel1);
             tabPage3.Location = new Point(4, 42);
+            tabPage3.Margin = new Padding(0);
             tabPage3.Name = "tabPage3";
             tabPage3.Size = new Size(1342, 634);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Campaigns Management";
+            // 
+            // campaigns_table
+            // 
+            campaigns_table.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            campaigns_table.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            campaigns_table.Location = new Point(129, 115);
+            campaigns_table.Name = "campaigns_table";
+            campaigns_table.Size = new Size(1053, 215);
+            campaigns_table.TabIndex = 4;
+            campaigns_table.CellClick += campaigns_table_CellClick;
             // 
             // panelCampaignEditor
             // 
@@ -999,14 +1010,13 @@ namespace GARD
             panelCampaignEditor.BorderColor = Color.FromArgb(150, 150, 150);
             panelCampaignEditor.BorderThickness = 1;
             panelCampaignEditor.Controls.Add(saveCampaign);
-            panelCampaignEditor.Controls.Add(chkEnableHtml);
             panelCampaignEditor.Controls.Add(campaignContent);
             panelCampaignEditor.Controls.Add(label1);
             panelCampaignEditor.Controls.Add(txtCampaignName);
             panelCampaignEditor.IsDerivedStyle = true;
-            panelCampaignEditor.Location = new Point(129, 346);
+            panelCampaignEditor.Location = new Point(129, 344);
             panelCampaignEditor.Name = "panelCampaignEditor";
-            panelCampaignEditor.Size = new Size(1053, 275);
+            panelCampaignEditor.Size = new Size(1053, 273);
             panelCampaignEditor.Style = MetroSet_UI.Enums.Style.Light;
             panelCampaignEditor.StyleManager = null;
             panelCampaignEditor.TabIndex = 3;
@@ -1039,29 +1049,7 @@ namespace GARD
             saveCampaign.Text = "Save Campaign";
             saveCampaign.ThemeAuthor = "Narwin";
             saveCampaign.ThemeName = "MetroLite";
-            // 
-            // chkEnableHtml
-            // 
-            chkEnableHtml.BackColor = Color.Transparent;
-            chkEnableHtml.BackgroundColor = Color.White;
-            chkEnableHtml.BorderColor = Color.FromArgb(155, 155, 155);
-            chkEnableHtml.Checked = false;
-            chkEnableHtml.CheckSignColor = Color.FromArgb(65, 177, 225);
-            chkEnableHtml.CheckState = MetroSet_UI.Enums.CheckState.Unchecked;
-            chkEnableHtml.DisabledBorderColor = Color.FromArgb(205, 205, 205);
-            chkEnableHtml.Font = new Font("Microsoft Sans Serif", 9F);
-            chkEnableHtml.IsDerivedStyle = true;
-            chkEnableHtml.Location = new Point(330, 84);
-            chkEnableHtml.Name = "chkEnableHtml";
-            chkEnableHtml.Padding = new Padding(5);
-            chkEnableHtml.SignStyle = MetroSet_UI.Enums.SignStyle.Sign;
-            chkEnableHtml.Size = new Size(285, 16);
-            chkEnableHtml.Style = MetroSet_UI.Enums.Style.Light;
-            chkEnableHtml.StyleManager = null;
-            chkEnableHtml.TabIndex = 3;
-            chkEnableHtml.Text = "Enable HTML Template";
-            chkEnableHtml.ThemeAuthor = "Narwin";
-            chkEnableHtml.ThemeName = "MetroLite";
+            saveCampaign.Click += saveCampaign_Click;
             // 
             // campaignContent
             // 
@@ -1094,57 +1082,46 @@ namespace GARD
             txtCampaignName.Size = new Size(272, 26);
             txtCampaignName.TabIndex = 0;
             // 
-            // campaigns_table
-            // 
-            campaigns_table.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            campaigns_table.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            campaigns_table.BackgroundColor = SystemColors.Menu;
-            campaigns_table.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            campaigns_table.Columns.AddRange(new DataGridViewColumn[] { ID, campaign_name, status, created_at });
-            campaigns_table.Location = new Point(129, 55);
-            campaigns_table.Name = "campaigns_table";
-            campaigns_table.RowHeadersWidth = 51;
-            campaigns_table.Size = new Size(1053, 285);
-            campaigns_table.TabIndex = 2;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "Campaign ID";
-            ID.MinimumWidth = 6;
-            ID.Name = "ID";
-            // 
-            // campaign_name
-            // 
-            campaign_name.HeaderText = "Campaign Name";
-            campaign_name.MinimumWidth = 6;
-            campaign_name.Name = "campaign_name";
-            // 
-            // status
-            // 
-            status.HeaderText = "Campaign Status";
-            status.MinimumWidth = 6;
-            status.Name = "status";
-            // 
-            // created_at
-            // 
-            created_at.HeaderText = "Creation Date";
-            created_at.MinimumWidth = 6;
-            created_at.Name = "created_at";
-            // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 83.3333359F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.666666F));
-            tableLayoutPanel1.Controls.Add(addCampaign, 1, 0);
+            tableLayoutPanel1.ColumnCount = 3;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 87.4466248F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 12.5533733F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 170F));
+            tableLayoutPanel1.Controls.Add(deletecampaign, 2, 0);
             tableLayoutPanel1.Controls.Add(campaignSearch, 0, 0);
+            tableLayoutPanel1.Controls.Add(addCampaign, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Top;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(1342, 49);
+            tableLayoutPanel1.Size = new Size(1342, 42);
             tableLayoutPanel1.TabIndex = 1;
+            // 
+            // deletecampaign
+            // 
+            deletecampaign.BackColor = Color.IndianRed;
+            deletecampaign.ForeColor = Color.Black;
+            deletecampaign.Location = new Point(1171, 0);
+            deletecampaign.Margin = new Padding(0);
+            deletecampaign.Name = "deletecampaign";
+            deletecampaign.Size = new Size(171, 42);
+            deletecampaign.TabIndex = 5;
+            deletecampaign.Text = "Delete";
+            deletecampaign.UseVisualStyleBackColor = false;
+            deletecampaign.Click += deletecampaign_Click;
+            // 
+            // campaignSearch
+            // 
+            campaignSearch.Dock = DockStyle.Fill;
+            campaignSearch.Font = new Font("Microsoft Sans Serif", 16F);
+            campaignSearch.Location = new Point(3, 3);
+            campaignSearch.Multiline = true;
+            campaignSearch.Name = "campaignSearch";
+            campaignSearch.PlaceholderText = "Search Campaigns | or select one to delete";
+            campaignSearch.Size = new Size(1018, 36);
+            campaignSearch.TabIndex = 0;
             // 
             // addCampaign
             // 
@@ -1156,7 +1133,7 @@ namespace GARD
             addCampaign.HoverColor = Color.FromArgb(95, 207, 255);
             addCampaign.HoverTextColor = Color.White;
             addCampaign.IsDerivedStyle = true;
-            addCampaign.Location = new Point(1121, 3);
+            addCampaign.Location = new Point(1027, 3);
             addCampaign.Name = "addCampaign";
             addCampaign.NormalBorderColor = Color.FromArgb(65, 177, 225);
             addCampaign.NormalColor = Color.FromArgb(65, 177, 225);
@@ -1164,24 +1141,14 @@ namespace GARD
             addCampaign.PressBorderColor = Color.FromArgb(35, 147, 195);
             addCampaign.PressColor = Color.FromArgb(35, 147, 195);
             addCampaign.PressTextColor = Color.White;
-            addCampaign.Size = new Size(218, 42);
+            addCampaign.Size = new Size(141, 36);
             addCampaign.Style = MetroSet_UI.Enums.Style.Light;
             addCampaign.StyleManager = null;
             addCampaign.TabIndex = 1;
             addCampaign.Text = "New Campaign";
             addCampaign.ThemeAuthor = "Narwin";
             addCampaign.ThemeName = "MetroLite";
-            // 
-            // campaignSearch
-            // 
-            campaignSearch.Dock = DockStyle.Fill;
-            campaignSearch.Font = new Font("Microsoft Sans Serif", 16F);
-            campaignSearch.Location = new Point(3, 3);
-            campaignSearch.Multiline = true;
-            campaignSearch.Name = "campaignSearch";
-            campaignSearch.PlaceholderText = "Search Campaigns....";
-            campaignSearch.Size = new Size(1112, 43);
-            campaignSearch.TabIndex = 0;
+            addCampaign.Click += addCampaign_Click;
             // 
             // tabPage4
             // 
@@ -1405,20 +1372,24 @@ namespace GARD
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(label43);
+            tabPage5.Controls.Add(label42);
+            tabPage5.Controls.Add(Currently_Sending_Email);
+            tabPage5.Controls.Add(SentProgress);
+            tabPage5.Controls.Add(target_audience);
+            tabPage5.Controls.Add(UserCampaigns);
             tabPage5.Controls.Add(label17);
-            tabPage5.Controls.Add(panel1);
             tabPage5.Controls.Add(label15);
             tabPage5.Controls.Add(label14);
             tabPage5.Controls.Add(label13);
             tabPage5.Controls.Add(label12);
-            tabPage5.Controls.Add(button4);
+            tabPage5.Controls.Add(SendCampaignButton);
             tabPage5.Controls.Add(label11);
-            tabPage5.Controls.Add(button3);
+            tabPage5.Controls.Add(ApplyFilterButton);
             tabPage5.Controls.Add(cbStatusFilter);
-            tabPage5.Controls.Add(txtSearch);
-            tabPage5.Controls.Add(dataGridView1);
+            tabPage5.Controls.Add(EmailLogs);
             tabPage5.Controls.Add(progressBar);
-            tabPage5.Controls.Add(metroSetLabel4);
+            tabPage5.Controls.Add(sending_to_label);
             tabPage5.Controls.Add(dtpTo);
             tabPage5.Controls.Add(dtpFrom);
             tabPage5.Controls.Add(lblTitle);
@@ -1427,6 +1398,95 @@ namespace GARD
             tabPage5.Size = new Size(1342, 634);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "Email Logs/Tracking";
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Location = new Point(179, 149);
+            label43.Name = "label43";
+            label43.Size = new Size(146, 22);
+            label43.TabIndex = 28;
+            label43.Text = "Select Campaign";
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Location = new Point(182, 195);
+            label42.Name = "label42";
+            label42.Size = new Size(143, 22);
+            label42.TabIndex = 27;
+            label42.Text = "Target Audience";
+            // 
+            // Currently_Sending_Email
+            // 
+            Currently_Sending_Email.Location = new Point(694, 147);
+            Currently_Sending_Email.Name = "Currently_Sending_Email";
+            Currently_Sending_Email.Size = new Size(222, 27);
+            Currently_Sending_Email.TabIndex = 25;
+            // 
+            // SentProgress
+            // 
+            SentProgress.Location = new Point(182, 508);
+            SentProgress.Name = "SentProgress";
+            SentProgress.Size = new Size(843, 21);
+            SentProgress.TabIndex = 24;
+            // 
+            // target_audience
+            // 
+            target_audience.AllowDrop = true;
+            target_audience.ArrowColor = Color.FromArgb(150, 150, 150);
+            target_audience.BackColor = Color.Transparent;
+            target_audience.BackgroundColor = Color.FromArgb(238, 238, 238);
+            target_audience.BorderColor = Color.FromArgb(150, 150, 150);
+            target_audience.CausesValidation = false;
+            target_audience.DisabledBackColor = Color.FromArgb(204, 204, 204);
+            target_audience.DisabledBorderColor = Color.FromArgb(155, 155, 155);
+            target_audience.DisabledForeColor = Color.FromArgb(136, 136, 136);
+            target_audience.DrawMode = DrawMode.OwnerDrawFixed;
+            target_audience.DropDownStyle = ComboBoxStyle.DropDownList;
+            target_audience.Font = new Font("Microsoft Sans Serif", 11F);
+            target_audience.FormattingEnabled = true;
+            target_audience.IsDerivedStyle = true;
+            target_audience.ItemHeight = 20;
+            target_audience.Items.AddRange(new object[] { "all", "active", "inactive", "bounced" });
+            target_audience.Location = new Point(347, 193);
+            target_audience.Name = "target_audience";
+            target_audience.SelectedItemBackColor = Color.FromArgb(65, 177, 225);
+            target_audience.SelectedItemForeColor = Color.White;
+            target_audience.Size = new Size(260, 26);
+            target_audience.Style = MetroSet_UI.Enums.Style.Light;
+            target_audience.StyleManager = null;
+            target_audience.TabIndex = 23;
+            target_audience.ThemeAuthor = "Narwin";
+            target_audience.ThemeName = "MetroLite";
+            // 
+            // UserCampaigns
+            // 
+            UserCampaigns.AllowDrop = true;
+            UserCampaigns.ArrowColor = Color.FromArgb(150, 150, 150);
+            UserCampaigns.BackColor = Color.Transparent;
+            UserCampaigns.BackgroundColor = Color.FromArgb(238, 238, 238);
+            UserCampaigns.BorderColor = Color.FromArgb(150, 150, 150);
+            UserCampaigns.CausesValidation = false;
+            UserCampaigns.DisabledBackColor = Color.FromArgb(204, 204, 204);
+            UserCampaigns.DisabledBorderColor = Color.FromArgb(155, 155, 155);
+            UserCampaigns.DisabledForeColor = Color.FromArgb(136, 136, 136);
+            UserCampaigns.DrawMode = DrawMode.OwnerDrawFixed;
+            UserCampaigns.DropDownStyle = ComboBoxStyle.DropDownList;
+            UserCampaigns.Font = new Font("Microsoft Sans Serif", 11F);
+            UserCampaigns.FormattingEnabled = true;
+            UserCampaigns.IsDerivedStyle = true;
+            UserCampaigns.ItemHeight = 20;
+            UserCampaigns.Location = new Point(347, 147);
+            UserCampaigns.Name = "UserCampaigns";
+            UserCampaigns.SelectedItemBackColor = Color.FromArgb(65, 177, 225);
+            UserCampaigns.SelectedItemForeColor = Color.White;
+            UserCampaigns.Size = new Size(260, 26);
+            UserCampaigns.Style = MetroSet_UI.Enums.Style.Light;
+            UserCampaigns.StyleManager = null;
+            UserCampaigns.TabIndex = 22;
+            UserCampaigns.ThemeAuthor = "Narwin";
+            UserCampaigns.ThemeName = "MetroLite";
             // 
             // label17
             // 
@@ -1438,15 +1498,6 @@ namespace GARD
             label17.Size = new Size(61, 42);
             label17.TabIndex = 21;
             label17.Text = "📧";
-            // 
-            // panel1
-            // 
-            panel1.Anchor = AnchorStyles.None;
-            panel1.BackColor = Color.Green;
-            panel1.Location = new Point(182, 508);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(387, 10);
-            panel1.TabIndex = 20;
             // 
             // label15
             // 
@@ -1492,17 +1543,18 @@ namespace GARD
             label12.TabIndex = 16;
             label12.Text = "Total Failed:1";
             // 
-            // button4
+            // SendCampaignButton
             // 
-            button4.BackColor = Color.RoyalBlue;
-            button4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(182, 197);
-            button4.Name = "button4";
-            button4.Size = new Size(260, 30);
-            button4.TabIndex = 15;
-            button4.Text = "Search";
-            button4.UseVisualStyleBackColor = false;
+            SendCampaignButton.BackColor = Color.RoyalBlue;
+            SendCampaignButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SendCampaignButton.ForeColor = Color.White;
+            SendCampaignButton.Location = new Point(683, 191);
+            SendCampaignButton.Name = "SendCampaignButton";
+            SendCampaignButton.Size = new Size(222, 30);
+            SendCampaignButton.TabIndex = 15;
+            SendCampaignButton.Text = "Send Campaign";
+            SendCampaignButton.UseVisualStyleBackColor = false;
+            SendCampaignButton.Click += SendCampaignButton_Click;
             // 
             // label11
             // 
@@ -1515,17 +1567,17 @@ namespace GARD
             label11.TabIndex = 14;
             label11.Text = "Total Sent:1";
             // 
-            // button3
+            // ApplyFilterButton
             // 
-            button3.BackColor = Color.RoyalBlue;
-            button3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(778, 197);
-            button3.Name = "button3";
-            button3.Size = new Size(247, 30);
-            button3.TabIndex = 13;
-            button3.Text = "Apply Filter";
-            button3.UseVisualStyleBackColor = false;
+            ApplyFilterButton.BackColor = Color.RoyalBlue;
+            ApplyFilterButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ApplyFilterButton.ForeColor = Color.White;
+            ApplyFilterButton.Location = new Point(841, 231);
+            ApplyFilterButton.Name = "ApplyFilterButton";
+            ApplyFilterButton.Size = new Size(183, 30);
+            ApplyFilterButton.TabIndex = 13;
+            ApplyFilterButton.Text = "Apply Filter";
+            ApplyFilterButton.UseVisualStyleBackColor = false;
             // 
             // cbStatusFilter
             // 
@@ -1544,106 +1596,27 @@ namespace GARD
             cbStatusFilter.FormattingEnabled = true;
             cbStatusFilter.IsDerivedStyle = true;
             cbStatusFilter.ItemHeight = 20;
-            cbStatusFilter.Items.AddRange(new object[] { "All", "Sent", "Failed", "Bounced" });
-            cbStatusFilter.Location = new Point(491, 201);
+            cbStatusFilter.Items.AddRange(new object[] { "All", "Sent", "Failed" });
+            cbStatusFilter.Location = new Point(669, 233);
             cbStatusFilter.Name = "cbStatusFilter";
             cbStatusFilter.SelectedItemBackColor = Color.FromArgb(65, 177, 225);
             cbStatusFilter.SelectedItemForeColor = Color.White;
-            cbStatusFilter.Size = new Size(244, 26);
+            cbStatusFilter.Size = new Size(166, 26);
             cbStatusFilter.Style = MetroSet_UI.Enums.Style.Light;
             cbStatusFilter.StyleManager = null;
             cbStatusFilter.TabIndex = 12;
             cbStatusFilter.ThemeAuthor = "Narwin";
             cbStatusFilter.ThemeName = "MetroLite";
             // 
-            // txtSearch
+            // EmailLogs
             // 
-            txtSearch.AutoCompleteCustomSource = null;
-            txtSearch.AutoCompleteMode = AutoCompleteMode.None;
-            txtSearch.AutoCompleteSource = AutoCompleteSource.None;
-            txtSearch.BorderColor = Color.FromArgb(155, 155, 155);
-            txtSearch.DisabledBackColor = Color.FromArgb(204, 204, 204);
-            txtSearch.DisabledBorderColor = Color.FromArgb(155, 155, 155);
-            txtSearch.DisabledForeColor = Color.FromArgb(136, 136, 136);
-            txtSearch.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSearch.HoverColor = Color.FromArgb(102, 102, 102);
-            txtSearch.Image = null;
-            txtSearch.IsDerivedStyle = true;
-            txtSearch.Lines = null;
-            txtSearch.Location = new Point(182, 151);
-            txtSearch.MaxLength = 32767;
-            txtSearch.Multiline = false;
-            txtSearch.Name = "txtSearch";
-            txtSearch.ReadOnly = false;
-            txtSearch.Size = new Size(260, 28);
-            txtSearch.Style = MetroSet_UI.Enums.Style.Light;
-            txtSearch.StyleManager = null;
-            txtSearch.TabIndex = 11;
-            txtSearch.Text = "Search by subscriber name";
-            txtSearch.TextAlign = HorizontalAlignment.Left;
-            txtSearch.ThemeAuthor = "Narwin";
-            txtSearch.ThemeName = "MetroLite";
-            txtSearch.UseSystemPasswordChar = false;
-            txtSearch.WatermarkText = "";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
-            dataGridView1.Location = new Point(182, 260);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(843, 218);
-            dataGridView1.TabIndex = 9;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "SubscriberID";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "CampaignID";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Status";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.Width = 130;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "SentAt";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.Width = 130;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.ForeColor = SystemColors.GradientActiveCaption;
-            Column6.DefaultCellStyle = dataGridViewCellStyle2;
-            Column6.HeaderText = "Action";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            Column6.Resizable = DataGridViewTriState.True;
-            Column6.SortMode = DataGridViewColumnSortMode.Automatic;
-            Column6.Text = "View";
-            Column6.UseColumnTextForButtonValue = true;
-            Column6.Width = 140;
+            EmailLogs.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            EmailLogs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            EmailLogs.Location = new Point(182, 284);
+            EmailLogs.Name = "EmailLogs";
+            EmailLogs.RowHeadersWidth = 51;
+            EmailLogs.Size = new Size(843, 218);
+            EmailLogs.TabIndex = 9;
             // 
             // progressBar
             // 
@@ -1668,24 +1641,24 @@ namespace GARD
             progressBar.ThemeName = "MetroLite";
             progressBar.Value = 0;
             // 
-            // metroSetLabel4
+            // sending_to_label
             // 
-            metroSetLabel4.Font = new Font("Microsoft Sans Serif", 10F);
-            metroSetLabel4.IsDerivedStyle = true;
-            metroSetLabel4.Location = new Point(745, 153);
-            metroSetLabel4.Name = "metroSetLabel4";
-            metroSetLabel4.Size = new Size(25, 24);
-            metroSetLabel4.Style = MetroSet_UI.Enums.Style.Light;
-            metroSetLabel4.StyleManager = null;
-            metroSetLabel4.TabIndex = 5;
-            metroSetLabel4.Text = "To";
-            metroSetLabel4.ThemeAuthor = "Narwin";
-            metroSetLabel4.ThemeName = "MetroLite";
+            sending_to_label.Font = new Font("Microsoft Sans Serif", 10F);
+            sending_to_label.IsDerivedStyle = true;
+            sending_to_label.Location = new Point(613, 149);
+            sending_to_label.Name = "sending_to_label";
+            sending_to_label.Size = new Size(86, 24);
+            sending_to_label.Style = MetroSet_UI.Enums.Style.Light;
+            sending_to_label.StyleManager = null;
+            sending_to_label.TabIndex = 5;
+            sending_to_label.Text = "Sending to";
+            sending_to_label.ThemeAuthor = "Narwin";
+            sending_to_label.ThemeName = "MetroLite";
             // 
             // dtpTo
             // 
             dtpTo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dtpTo.Location = new Point(778, 152);
+            dtpTo.Location = new Point(416, 237);
             dtpTo.Name = "dtpTo";
             dtpTo.Size = new Size(247, 22);
             dtpTo.TabIndex = 4;
@@ -1693,9 +1666,9 @@ namespace GARD
             // dtpFrom
             // 
             dtpFrom.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dtpFrom.Location = new Point(491, 153);
+            dtpFrom.Location = new Point(182, 237);
             dtpFrom.Name = "dtpFrom";
-            dtpFrom.Size = new Size(244, 22);
+            dtpFrom.Size = new Size(220, 22);
             dtpFrom.TabIndex = 3;
             // 
             // lblTitle
@@ -1751,17 +1724,18 @@ namespace GARD
             metroSetPanel9.BackgroundColor = Color.White;
             metroSetPanel9.BorderColor = Color.FromArgb(150, 150, 150);
             metroSetPanel9.BorderThickness = 1;
+            metroSetPanel9.Controls.Add(label44);
             metroSetPanel9.Controls.Add(label30);
             metroSetPanel9.Controls.Add(label26);
-            metroSetPanel9.Controls.Add(textBox2);
-            metroSetPanel9.Controls.Add(metroSetButton2);
-            metroSetPanel9.Controls.Add(textBox3);
-            metroSetPanel9.Controls.Add(metroSetCheckBox1);
+            metroSetPanel9.Controls.Add(smtp_email);
+            metroSetPanel9.Controls.Add(Save_Smtp_Settings);
+            metroSetPanel9.Controls.Add(smtp_password);
+            metroSetPanel9.Controls.Add(smtp_ssl);
             metroSetPanel9.Controls.Add(label27);
             metroSetPanel9.Controls.Add(label29);
             metroSetPanel9.Controls.Add(label28);
-            metroSetPanel9.Controls.Add(textBox6);
-            metroSetPanel9.Controls.Add(textBox4);
+            metroSetPanel9.Controls.Add(smtp_port);
+            metroSetPanel9.Controls.Add(smtp_server);
             metroSetPanel9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             metroSetPanel9.IsDerivedStyle = true;
             metroSetPanel9.Location = new Point(436, 131);
@@ -1772,6 +1746,18 @@ namespace GARD
             metroSetPanel9.TabIndex = 13;
             metroSetPanel9.ThemeAuthor = "Narwin";
             metroSetPanel9.ThemeName = "MetroLite";
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.BackColor = Color.Transparent;
+            label44.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label44.ForeColor = Color.Black;
+            label44.Location = new Point(119, 353);
+            label44.Name = "label44";
+            label44.Size = new Size(161, 17);
+            label44.TabIndex = 11;
+            label44.Text = "(i) Enable for PORT 465";
             // 
             // label30
             // 
@@ -1795,71 +1781,72 @@ namespace GARD
             label26.TabIndex = 0;
             label26.Text = "Enter your Email";
             // 
-            // textBox2
+            // smtp_email
             // 
-            textBox2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(64, 128);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "abc@gmail.com";
-            textBox2.Size = new Size(273, 24);
-            textBox2.TabIndex = 1;
+            smtp_email.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            smtp_email.Location = new Point(64, 128);
+            smtp_email.Name = "smtp_email";
+            smtp_email.PlaceholderText = "abc@gmail.com";
+            smtp_email.Size = new Size(273, 24);
+            smtp_email.TabIndex = 1;
             // 
-            // metroSetButton2
+            // Save_Smtp_Settings
             // 
-            metroSetButton2.DisabledBackColor = Color.FromArgb(120, 65, 177, 225);
-            metroSetButton2.DisabledBorderColor = Color.FromArgb(120, 65, 177, 225);
-            metroSetButton2.DisabledForeColor = Color.Gray;
-            metroSetButton2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            metroSetButton2.HoverBorderColor = Color.FromArgb(95, 207, 255);
-            metroSetButton2.HoverColor = Color.FromArgb(95, 207, 255);
-            metroSetButton2.HoverTextColor = Color.White;
-            metroSetButton2.IsDerivedStyle = true;
-            metroSetButton2.Location = new Point(64, 384);
-            metroSetButton2.Name = "metroSetButton2";
-            metroSetButton2.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            metroSetButton2.NormalColor = Color.FromArgb(65, 177, 225);
-            metroSetButton2.NormalTextColor = Color.White;
-            metroSetButton2.PressBorderColor = Color.FromArgb(35, 147, 195);
-            metroSetButton2.PressColor = Color.FromArgb(35, 147, 195);
-            metroSetButton2.PressTextColor = Color.White;
-            metroSetButton2.Size = new Size(273, 36);
-            metroSetButton2.Style = MetroSet_UI.Enums.Style.Light;
-            metroSetButton2.StyleManager = null;
-            metroSetButton2.TabIndex = 9;
-            metroSetButton2.Text = "Apply Configuration";
-            metroSetButton2.ThemeAuthor = "Narwin";
-            metroSetButton2.ThemeName = "MetroLite";
+            Save_Smtp_Settings.DisabledBackColor = Color.FromArgb(120, 65, 177, 225);
+            Save_Smtp_Settings.DisabledBorderColor = Color.FromArgb(120, 65, 177, 225);
+            Save_Smtp_Settings.DisabledForeColor = Color.Gray;
+            Save_Smtp_Settings.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Save_Smtp_Settings.HoverBorderColor = Color.FromArgb(95, 207, 255);
+            Save_Smtp_Settings.HoverColor = Color.FromArgb(95, 207, 255);
+            Save_Smtp_Settings.HoverTextColor = Color.White;
+            Save_Smtp_Settings.IsDerivedStyle = true;
+            Save_Smtp_Settings.Location = new Point(64, 384);
+            Save_Smtp_Settings.Name = "Save_Smtp_Settings";
+            Save_Smtp_Settings.NormalBorderColor = Color.FromArgb(65, 177, 225);
+            Save_Smtp_Settings.NormalColor = Color.FromArgb(65, 177, 225);
+            Save_Smtp_Settings.NormalTextColor = Color.White;
+            Save_Smtp_Settings.PressBorderColor = Color.FromArgb(35, 147, 195);
+            Save_Smtp_Settings.PressColor = Color.FromArgb(35, 147, 195);
+            Save_Smtp_Settings.PressTextColor = Color.White;
+            Save_Smtp_Settings.Size = new Size(273, 36);
+            Save_Smtp_Settings.Style = MetroSet_UI.Enums.Style.Light;
+            Save_Smtp_Settings.StyleManager = null;
+            Save_Smtp_Settings.TabIndex = 9;
+            Save_Smtp_Settings.Text = "Apply Configuration";
+            Save_Smtp_Settings.ThemeAuthor = "Narwin";
+            Save_Smtp_Settings.ThemeName = "MetroLite";
+            Save_Smtp_Settings.Click += Save_Smtp_Settings_Click;
             // 
-            // textBox3
+            // smtp_password
             // 
-            textBox3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(64, 209);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "\txxxx xxxx xxxx";
-            textBox3.Size = new Size(273, 24);
-            textBox3.TabIndex = 2;
+            smtp_password.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            smtp_password.Location = new Point(64, 209);
+            smtp_password.Name = "smtp_password";
+            smtp_password.PlaceholderText = "\txxxx xxxx xxxx";
+            smtp_password.Size = new Size(273, 24);
+            smtp_password.TabIndex = 2;
             // 
-            // metroSetCheckBox1
+            // smtp_ssl
             // 
-            metroSetCheckBox1.BackColor = Color.Transparent;
-            metroSetCheckBox1.BackgroundColor = Color.White;
-            metroSetCheckBox1.BorderColor = Color.FromArgb(155, 155, 155);
-            metroSetCheckBox1.Checked = false;
-            metroSetCheckBox1.CheckSignColor = Color.FromArgb(65, 177, 225);
-            metroSetCheckBox1.CheckState = MetroSet_UI.Enums.CheckState.Unchecked;
-            metroSetCheckBox1.DisabledBorderColor = Color.FromArgb(205, 205, 205);
-            metroSetCheckBox1.Font = new Font("Microsoft Sans Serif", 10F);
-            metroSetCheckBox1.IsDerivedStyle = true;
-            metroSetCheckBox1.Location = new Point(64, 345);
-            metroSetCheckBox1.Name = "metroSetCheckBox1";
-            metroSetCheckBox1.SignStyle = MetroSet_UI.Enums.SignStyle.Sign;
-            metroSetCheckBox1.Size = new Size(142, 16);
-            metroSetCheckBox1.Style = MetroSet_UI.Enums.Style.Light;
-            metroSetCheckBox1.StyleManager = null;
-            metroSetCheckBox1.TabIndex = 8;
-            metroSetCheckBox1.Text = "SSL Encryption";
-            metroSetCheckBox1.ThemeAuthor = "Narwin";
-            metroSetCheckBox1.ThemeName = "MetroLite";
+            smtp_ssl.BackColor = Color.Transparent;
+            smtp_ssl.BackgroundColor = Color.White;
+            smtp_ssl.BorderColor = Color.FromArgb(155, 155, 155);
+            smtp_ssl.Checked = false;
+            smtp_ssl.CheckSignColor = Color.FromArgb(65, 177, 225);
+            smtp_ssl.CheckState = MetroSet_UI.Enums.CheckState.Unchecked;
+            smtp_ssl.DisabledBorderColor = Color.FromArgb(205, 205, 205);
+            smtp_ssl.Font = new Font("Microsoft Sans Serif", 10F);
+            smtp_ssl.IsDerivedStyle = true;
+            smtp_ssl.Location = new Point(62, 325);
+            smtp_ssl.Name = "smtp_ssl";
+            smtp_ssl.SignStyle = MetroSet_UI.Enums.SignStyle.Sign;
+            smtp_ssl.Size = new Size(142, 16);
+            smtp_ssl.Style = MetroSet_UI.Enums.Style.Light;
+            smtp_ssl.StyleManager = null;
+            smtp_ssl.TabIndex = 8;
+            smtp_ssl.Text = "SSL Encryption";
+            smtp_ssl.ThemeAuthor = "Narwin";
+            smtp_ssl.ThemeName = "MetroLite";
             // 
             // label27
             // 
@@ -1892,23 +1879,23 @@ namespace GARD
             label28.TabIndex = 4;
             label28.Text = "SMTP Server";
             // 
-            // textBox6
+            // smtp_port
             // 
-            textBox6.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(237, 284);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = "  i.e 587";
-            textBox6.Size = new Size(100, 24);
-            textBox6.TabIndex = 6;
+            smtp_port.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            smtp_port.Location = new Point(212, 284);
+            smtp_port.Name = "smtp_port";
+            smtp_port.PlaceholderText = "  i.e 587";
+            smtp_port.Size = new Size(125, 24);
+            smtp_port.TabIndex = 6;
             // 
-            // textBox4
+            // smtp_server
             // 
-            textBox4.Font = new Font("Microsoft Sans Serif", 11.25F);
-            textBox4.Location = new Point(64, 284);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "smtp.gmail.com";
-            textBox4.Size = new Size(142, 24);
-            textBox4.TabIndex = 5;
+            smtp_server.Font = new Font("Microsoft Sans Serif", 11.25F);
+            smtp_server.Location = new Point(64, 284);
+            smtp_server.Name = "smtp_server";
+            smtp_server.PlaceholderText = "smtp.gmail.com";
+            smtp_server.Size = new Size(142, 24);
+            smtp_server.TabIndex = 5;
             // 
             // GOOGLEIMG
             // 
@@ -1937,13 +1924,13 @@ namespace GARD
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1366, 768);
             Controls.Add(SQLIMG);
-            Controls.Add(metroSetTabControl1);
+            Controls.Add(PageTabs);
             Controls.Add(metroSetControlBox1);
             Font = new Font("Microsoft Sans Serif", 13F);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gmail Automation And Record Database (GARD)";
-            metroSetTabControl1.ResumeLayout(false);
+            PageTabs.ResumeLayout(false);
             tabPage6.ResumeLayout(false);
             tabPage6.PerformLayout();
             metroSetPanel8.ResumeLayout(false);
@@ -1975,9 +1962,9 @@ namespace GARD
             metroSetPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)campaigns_table).EndInit();
             panelCampaignEditor.ResumeLayout(false);
             panelCampaignEditor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)campaigns_table).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tabPage4.ResumeLayout(false);
@@ -1985,7 +1972,7 @@ namespace GARD
             ((System.ComponentModel.ISupportInitialize)dgvsubscribers).EndInit();
             tabPage5.ResumeLayout(false);
             tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)EmailLogs).EndInit();
             tabPage7.ResumeLayout(false);
             tabPage7.PerformLayout();
             metroSetPanel9.ResumeLayout(false);
@@ -1998,7 +1985,7 @@ namespace GARD
         #endregion
 
         private MetroSet_UI.Controls.MetroSetControlBox metroSetControlBox1;
-        private MetroSet_UI.Controls.MetroSetTabControl metroSetTabControl1;
+        private MetroSet_UI.Controls.MetroSetTabControl PageTabs;
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TabPage tabPage3;
@@ -2007,15 +1994,9 @@ namespace GARD
         private MetroSetButton addCampaign;
         private TextBox campaignSearch;
         private TableLayoutPanel tableLayoutPanel1;
-        private DataGridView campaigns_table;
-        private DataGridViewTextBoxColumn ID;
-        private DataGridViewTextBoxColumn campaign_name;
-        private DataGridViewTextBoxColumn status;
-        private DataGridViewTextBoxColumn created_at;
         private MetroSetPanel panelCampaignEditor;
         private TextBox txtCampaignName;
         private MetroSetButton saveCampaign;
-        private MetroSetCheckBox chkEnableHtml;
         private TextBox campaignContent;
         private Label label1;
         private MetroSetPanel metroSetPanel1;
@@ -2047,31 +2028,23 @@ namespace GARD
         private Label label9;
         private PictureBox pictureBox6;
         private MetroSetLabel lblTitle;
-        private DataGridView dataGridView1;
+        private DataGridView EmailLogs;
         private MetroSetProgressBar progressBar;
-        private MetroSetLabel metroSetLabel4;
+        private MetroSetLabel sending_to_label;
         private DateTimePicker dtpTo;
         private DateTimePicker dtpFrom;
-        private MetroSetTextBox txtSearch;
         private MetroSetComboBox cbStatusFilter;
         private MetroSetButton metroSetButton1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewButtonColumn Column6;
-        private Button button4;
+        private Button SendCampaignButton;
         private Label label11;
-        private Button button3;
+        private Button ApplyFilterButton;
         private Label label13;
         private Label label12;
         private Label label14;
         private Label label15;
-        private Panel panel1;
         private Label label16;
-        private TextBox textBox5;
-        private TextBox textBox1;
+        private TextBox user_login;
+        private TextBox pass_login;
         private LinkLabel linkLabel1;
         private Label label17;
         private DataGridView dgvsubscribers;
@@ -2089,27 +2062,27 @@ namespace GARD
         private TabPage tabPage6;
         private TabPage tabPage7;
         private Label label26;
-        private TextBox textBox6;
-        private TextBox textBox4;
+        private TextBox smtp_port;
+        private TextBox smtp_server;
         private Label label28;
         private Label label27;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private MetroSetButton metroSetButton2;
-        private MetroSetCheckBox metroSetCheckBox1;
+        private TextBox smtp_password;
+        private TextBox smtp_email;
+        private MetroSetButton Save_Smtp_Settings;
+        private MetroSetCheckBox smtp_ssl;
         private Label label29;
         private Label label30;
         private PictureBox SQLIMG;
         private PictureBox GOOGLEIMG;
         private MetroSetPanel metroSetPanel8;
-        private LinkLabel linkLabel2;
+        private LinkLabel login_sign;
         private Label label31;
-        private TextBox textBox7;
-        private CheckBox checkBox2;
+        private TextBox pass_sign;
+        private CheckBox show_sign;
         private Label label32;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private Button button5;
+        private TextBox email_sign;
+        private TextBox user_sign;
+        private Button signup_sign;
         private Label label33;
         private PictureBox pictureBox8;
         private Label label34;
@@ -2127,5 +2100,14 @@ namespace GARD
         private Label label41;
         private Label label40;
         private ComboBox sub_status;
+        private DataGridView campaigns_table;
+        private Button deletecampaign;
+        private MetroSetComboBox UserCampaigns;
+        private MetroSetComboBox target_audience;
+        private TextBox Currently_Sending_Email;
+        private ProgressBar SentProgress;
+        private Label label43;
+        private Label label42;
+        private Label label44;
     }
 }

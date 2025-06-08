@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj": {}
+    "D:\\Downloads\\gard-automation\\GARD\\GARD\\GARD.csproj": {}
   },
   "projects": {
-    "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj": {
+    "D:\\Downloads\\gard-automation\\GARD\\GARD\\GARD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj",
+        "projectUniqueName": "D:\\Downloads\\gard-automation\\GARD\\GARD\\GARD.csproj",
         "projectName": "GARD",
-        "projectPath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj",
+        "projectPath": "D:\\Downloads\\gard-automation\\GARD\\GARD\\GARD.csproj",
         "packagesPath": "C:\\Users\\mudas\\.nuget\\packages\\",
-        "outputPath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\obj\\",
+        "outputPath": "D:\\Downloads\\gard-automation\\GARD\\GARD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files\\VisualStudioSDK's\\NuGetPackages"

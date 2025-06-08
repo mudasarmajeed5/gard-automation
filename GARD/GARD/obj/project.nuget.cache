@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tApXdxYcBt4=",
+  "dgSpecHash": "xBrF0Aeo0oc=",
   "success": true,
-  "projectFilePath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj",
+  "projectFilePath": "D:\\Downloads\\gard-automation\\GARD\\GARD\\GARD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mudas\\.nuget\\packages\\dynamicdata\\9.1.2\\dynamicdata.9.1.2.nupkg.sha512",
     "C:\\Users\\mudas\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512",
