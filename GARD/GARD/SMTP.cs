@@ -6,6 +6,7 @@ namespace GARD
 {
     public partial class Form1: MetroSetForm
     {
+        private int countEmailLogs = 0;
         private async void SendCampaignButton_Click(object sender, EventArgs e)
         {
             SendCampaignButton.Enabled = false;
@@ -125,7 +126,7 @@ namespace GARD
             Currently_Sending_Email.Text = "Done!";
 
             // Show completion message
-            MessageBox.Show($"Campaign sent!\nSuccessful: {successCount}\nFailed: {failureCount}");
+            MessageBox.Show($"Campaign sent!\n Successful: {successCount} || Failed: {failureCount}");
 
             // Re-enable the button
             SendCampaignButton.Enabled = true;
@@ -183,6 +184,7 @@ namespace GARD
                     });
                     EmailLogs.DataSource = emailLogs;
                     show_total_sent.Text = $"Total Sent: {emailLogs?.Count ?? 0}";
+                    countEmailLogs = emailLogs?.Count ?? 0;
                 }
                 else
                 {

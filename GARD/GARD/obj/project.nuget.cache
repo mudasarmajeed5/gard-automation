@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "tApXdxYcBt4=",
+  "dgSpecHash": "xYeXevhRUl8=",
   "success": true,
-  "projectFilePath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj",
+  "projectFilePath": "D:\\Downloads\\something\\gard-automation\\GARD\\GARD\\GARD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mudas\\.nuget\\packages\\dynamicdata\\9.1.2\\dynamicdata.9.1.2.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\fastcoloredtextbox.net6\\1.0.0\\fastcoloredtextbox.net6.1.0.0.nupkg.sha512",
     "C:\\Users\\mudas\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512",
     "C:\\Users\\mudas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\mudas\\.nuget\\packages\\oxyplot.core\\2.2.0\\oxyplot.core.2.2.0.nupkg.sha512",

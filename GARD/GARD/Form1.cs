@@ -7,20 +7,32 @@ namespace GARD
 {
     public partial class Form1 : MetroSetForm
     {
-        private int currentSubscriberId = -1;
         private readonly HttpClient client = new HttpClient();
-       
-      
+        private int currentAdminId = -1;
+
         public Form1()
         {
             InitializeComponent();
-            ChartManager.CreateCharts(PageTabs);
             loadSubscribers();
             dgvsubscribers.CellClick += dgvsubscribers_CellClick;
             filterSubs.SelectedIndex = 0;
             sub_status.SelectedIndex = 0;
-        }
+            this.Load += Form1_Load;
 
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            SetupEditorPanels();
+        }
+        private void UpdateStatsLabels()
+        {
+            total_campaigns_label.Text = (allCampaigns?.Count ?? 0).ToString();
+            total_campaigns_label1.Text = (allCampaigns?.Count ?? 0).ToString();
+            total_subscribers_label.Text = (allSubscribers?.Count ?? 0).ToString();
+            total_email_logs_label.Text = countEmailLogs.ToString();
+            total_email_logs_label1.Text = countEmailLogs.ToString();
+            label22.Text = "89%";
+        }
         private void clearFields_Click(object sender, EventArgs e)
         {
             sub_email.Text = "";
@@ -53,7 +65,7 @@ namespace GARD
         }
 
 
-        
+
         private void login_sign_Click(object sender, EventArgs e)
         {
             PageTabs.SelectedIndex = 1;
@@ -104,9 +116,11 @@ namespace GARD
                         currentAdminId = result.admin_id;
                         PageTabs.SelectedIndex = 2;
                         await LoadSmtpSettingsAsync(currentAdminId);
-                        loadSubscribers();
+                        await loadSubscribers();
                         await LoadCampaignsAsync();
                         await LoadEmailLogsAsync();
+
+                        UpdateStatsLabels();
                     }
                     else
                     {
@@ -123,7 +137,11 @@ namespace GARD
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
-  
+
+        private void SignUp_Click(object sender, EventArgs e)
+        {
+            PageTabs.SelectedIndex = 0;
+        }
     }
 }
 

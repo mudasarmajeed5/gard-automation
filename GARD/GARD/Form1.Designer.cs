@@ -57,7 +57,7 @@ namespace GARD
             pass_login = new TextBox();
             user_login = new TextBox();
             linkLabel1 = new LinkLabel();
-            button2 = new Button();
+            SignUp = new Button();
             checkBox1 = new CheckBox();
             button1 = new Button();
             label2 = new Label();
@@ -68,19 +68,19 @@ namespace GARD
             label38 = new Label();
             metroSetLabel2 = new MetroSetLabel();
             metroSetPanel7 = new MetroSetPanel();
-            label25 = new Label();
+            total_email_logs_label1 = new Label();
             label10 = new Label();
             pictureBox7 = new PictureBox();
             metroSetPanel4 = new MetroSetPanel();
-            label24 = new Label();
+            total_subscribers_label = new Label();
             label9 = new Label();
             pictureBox6 = new PictureBox();
             metroSetPanel5 = new MetroSetPanel();
-            label21 = new Label();
+            total_email_logs_label = new Label();
             label6 = new Label();
             pictureBox3 = new PictureBox();
             metroSetPanel6 = new MetroSetPanel();
-            label23 = new Label();
+            total_campaigns_label1 = new Label();
             label8 = new Label();
             pictureBox5 = new PictureBox();
             metroSetPanel3 = new MetroSetPanel();
@@ -88,7 +88,7 @@ namespace GARD
             label7 = new Label();
             pictureBox4 = new PictureBox();
             metroSetPanel2 = new MetroSetPanel();
-            label20 = new Label();
+            total_campaigns_label = new Label();
             label5 = new Label();
             pictureBox2 = new PictureBox();
             tabPage3 = new TabPage();
@@ -102,6 +102,12 @@ namespace GARD
             deletecampaign = new Button();
             campaignSearch = new TextBox();
             addCampaign = new MetroSetButton();
+            tabPage8 = new TabPage();
+            editorPanel = new SplitContainer();
+            topPanel = new Panel();
+            loadingLabel = new MetroSetLabel();
+            generateButton = new MetroSetButton();
+            promptBox = new TextBox();
             tabPage4 = new TabPage();
             sub_status = new ComboBox();
             updateSubscriber = new Button();
@@ -178,6 +184,10 @@ namespace GARD
             ((System.ComponentModel.ISupportInitialize)campaigns_table).BeginInit();
             panelCampaignEditor.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
+            tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)editorPanel).BeginInit();
+            editorPanel.SuspendLayout();
+            topPanel.SuspendLayout();
             tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvsubscribers).BeginInit();
             tabPage5.SuspendLayout();
@@ -223,6 +233,7 @@ namespace GARD
             PageTabs.Controls.Add(tabPage1);
             PageTabs.Controls.Add(tabPage2);
             PageTabs.Controls.Add(tabPage3);
+            PageTabs.Controls.Add(tabPage8);
             PageTabs.Controls.Add(tabPage4);
             PageTabs.Controls.Add(tabPage5);
             PageTabs.Controls.Add(tabPage7);
@@ -230,7 +241,7 @@ namespace GARD
             PageTabs.ItemSize = new Size(100, 38);
             PageTabs.Location = new Point(1, 82);
             PageTabs.Name = "PageTabs";
-            PageTabs.SelectedIndex = 5;
+            PageTabs.SelectedIndex = 1;
             PageTabs.SelectedTextColor = Color.White;
             PageTabs.Size = new Size(1350, 680);
             PageTabs.SizeMode = TabSizeMode.Fixed;
@@ -503,7 +514,7 @@ namespace GARD
             metroSetPanel1.Controls.Add(pass_login);
             metroSetPanel1.Controls.Add(user_login);
             metroSetPanel1.Controls.Add(linkLabel1);
-            metroSetPanel1.Controls.Add(button2);
+            metroSetPanel1.Controls.Add(SignUp);
             metroSetPanel1.Controls.Add(checkBox1);
             metroSetPanel1.Controls.Add(button1);
             metroSetPanel1.Controls.Add(label2);
@@ -552,17 +563,18 @@ namespace GARD
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Forget Password";
             // 
-            // button2
+            // SignUp
             // 
-            button2.BackColor = Color.IndianRed;
-            button2.Font = new Font("Impact", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Black;
-            button2.Location = new Point(72, 353);
-            button2.Name = "button2";
-            button2.Size = new Size(130, 42);
-            button2.TabIndex = 8;
-            button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = false;
+            SignUp.BackColor = Color.IndianRed;
+            SignUp.Font = new Font("Impact", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SignUp.ForeColor = Color.Black;
+            SignUp.Location = new Point(72, 353);
+            SignUp.Name = "SignUp";
+            SignUp.Size = new Size(130, 42);
+            SignUp.TabIndex = 8;
+            SignUp.Text = "Signup";
+            SignUp.UseVisualStyleBackColor = false;
+            SignUp.Click += SignUp_Click;
             // 
             // checkBox1
             // 
@@ -685,7 +697,7 @@ namespace GARD
             metroSetPanel7.BackgroundColor = Color.White;
             metroSetPanel7.BorderColor = Color.FromArgb(150, 150, 150);
             metroSetPanel7.BorderThickness = 1;
-            metroSetPanel7.Controls.Add(label25);
+            metroSetPanel7.Controls.Add(total_email_logs_label1);
             metroSetPanel7.Controls.Add(label10);
             metroSetPanel7.Controls.Add(pictureBox7);
             metroSetPanel7.IsDerivedStyle = true;
@@ -698,16 +710,16 @@ namespace GARD
             metroSetPanel7.ThemeAuthor = "Narwin";
             metroSetPanel7.ThemeName = "MetroLite";
             // 
-            // label25
+            // total_email_logs_label1
             // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
-            label25.ForeColor = Color.SteelBlue;
-            label25.Location = new Point(148, 148);
-            label25.Name = "label25";
-            label25.Size = new Size(51, 20);
-            label25.TabIndex = 5;
-            label25.Text = "900K";
+            total_email_logs_label1.AutoSize = true;
+            total_email_logs_label1.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
+            total_email_logs_label1.ForeColor = Color.SteelBlue;
+            total_email_logs_label1.Location = new Point(148, 147);
+            total_email_logs_label1.Name = "total_email_logs_label1";
+            total_email_logs_label1.Size = new Size(19, 20);
+            total_email_logs_label1.TabIndex = 5;
+            total_email_logs_label1.Text = "0";
             // 
             // label10
             // 
@@ -735,7 +747,7 @@ namespace GARD
             metroSetPanel4.BackgroundColor = Color.White;
             metroSetPanel4.BorderColor = Color.FromArgb(150, 150, 150);
             metroSetPanel4.BorderThickness = 1;
-            metroSetPanel4.Controls.Add(label24);
+            metroSetPanel4.Controls.Add(total_subscribers_label);
             metroSetPanel4.Controls.Add(label9);
             metroSetPanel4.Controls.Add(pictureBox6);
             metroSetPanel4.IsDerivedStyle = true;
@@ -748,16 +760,16 @@ namespace GARD
             metroSetPanel4.ThemeAuthor = "Narwin";
             metroSetPanel4.ThemeName = "MetroLite";
             // 
-            // label24
+            // total_subscribers_label
             // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
-            label24.ForeColor = Color.SteelBlue;
-            label24.Location = new Point(140, 145);
-            label24.Name = "label24";
-            label24.Size = new Size(51, 20);
-            label24.TabIndex = 5;
-            label24.Text = "103K";
+            total_subscribers_label.AutoSize = true;
+            total_subscribers_label.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
+            total_subscribers_label.ForeColor = Color.SteelBlue;
+            total_subscribers_label.Location = new Point(155, 147);
+            total_subscribers_label.Name = "total_subscribers_label";
+            total_subscribers_label.Size = new Size(19, 20);
+            total_subscribers_label.TabIndex = 5;
+            total_subscribers_label.Text = "0";
             // 
             // label9
             // 
@@ -785,7 +797,7 @@ namespace GARD
             metroSetPanel5.BackgroundColor = Color.White;
             metroSetPanel5.BorderColor = Color.FromArgb(150, 150, 150);
             metroSetPanel5.BorderThickness = 1;
-            metroSetPanel5.Controls.Add(label21);
+            metroSetPanel5.Controls.Add(total_email_logs_label);
             metroSetPanel5.Controls.Add(label6);
             metroSetPanel5.Controls.Add(pictureBox3);
             metroSetPanel5.IsDerivedStyle = true;
@@ -798,16 +810,16 @@ namespace GARD
             metroSetPanel5.ThemeAuthor = "Narwin";
             metroSetPanel5.ThemeName = "MetroLite";
             // 
-            // label21
+            // total_email_logs_label
             // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
-            label21.ForeColor = Color.SteelBlue;
-            label21.Location = new Point(139, 153);
-            label21.Name = "label21";
-            label21.Size = new Size(49, 20);
-            label21.TabIndex = 5;
-            label21.Text = "5900";
+            total_email_logs_label.AutoSize = true;
+            total_email_logs_label.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
+            total_email_logs_label.ForeColor = Color.SteelBlue;
+            total_email_logs_label.Location = new Point(155, 150);
+            total_email_logs_label.Name = "total_email_logs_label";
+            total_email_logs_label.Size = new Size(19, 20);
+            total_email_logs_label.TabIndex = 5;
+            total_email_logs_label.Text = "0";
             // 
             // label6
             // 
@@ -835,7 +847,7 @@ namespace GARD
             metroSetPanel6.BackgroundColor = Color.White;
             metroSetPanel6.BorderColor = Color.FromArgb(150, 150, 150);
             metroSetPanel6.BorderThickness = 1;
-            metroSetPanel6.Controls.Add(label23);
+            metroSetPanel6.Controls.Add(total_campaigns_label1);
             metroSetPanel6.Controls.Add(label8);
             metroSetPanel6.Controls.Add(pictureBox5);
             metroSetPanel6.IsDerivedStyle = true;
@@ -848,16 +860,16 @@ namespace GARD
             metroSetPanel6.ThemeAuthor = "Narwin";
             metroSetPanel6.ThemeName = "MetroLite";
             // 
-            // label23
+            // total_campaigns_label1
             // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
-            label23.ForeColor = Color.SteelBlue;
-            label23.Location = new Point(150, 147);
-            label23.Name = "label23";
-            label23.Size = new Size(19, 20);
-            label23.TabIndex = 5;
-            label23.Text = "4";
+            total_campaigns_label1.AutoSize = true;
+            total_campaigns_label1.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
+            total_campaigns_label1.ForeColor = Color.SteelBlue;
+            total_campaigns_label1.Location = new Point(150, 147);
+            total_campaigns_label1.Name = "total_campaigns_label1";
+            total_campaigns_label1.Size = new Size(19, 20);
+            total_campaigns_label1.TabIndex = 5;
+            total_campaigns_label1.Text = "0";
             // 
             // label8
             // 
@@ -905,9 +917,9 @@ namespace GARD
             label22.ForeColor = Color.SteelBlue;
             label22.Location = new Point(148, 151);
             label22.Name = "label22";
-            label22.Size = new Size(45, 20);
+            label22.Size = new Size(35, 20);
             label22.TabIndex = 5;
-            label22.Text = "89%";
+            label22.Text = "0%";
             // 
             // label7
             // 
@@ -935,7 +947,7 @@ namespace GARD
             metroSetPanel2.BackgroundColor = Color.White;
             metroSetPanel2.BorderColor = Color.FromArgb(150, 150, 150);
             metroSetPanel2.BorderThickness = 1;
-            metroSetPanel2.Controls.Add(label20);
+            metroSetPanel2.Controls.Add(total_campaigns_label);
             metroSetPanel2.Controls.Add(label5);
             metroSetPanel2.Controls.Add(pictureBox2);
             metroSetPanel2.IsDerivedStyle = true;
@@ -948,16 +960,16 @@ namespace GARD
             metroSetPanel2.ThemeAuthor = "Narwin";
             metroSetPanel2.ThemeName = "MetroLite";
             // 
-            // label20
+            // total_campaigns_label
             // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
-            label20.ForeColor = Color.SteelBlue;
-            label20.Location = new Point(150, 150);
-            label20.Name = "label20";
-            label20.Size = new Size(29, 20);
-            label20.TabIndex = 4;
-            label20.Text = "59";
+            total_campaigns_label.AutoSize = true;
+            total_campaigns_label.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Bold);
+            total_campaigns_label.ForeColor = Color.SteelBlue;
+            total_campaigns_label.Location = new Point(150, 150);
+            total_campaigns_label.Name = "total_campaigns_label";
+            total_campaigns_label.Size = new Size(19, 20);
+            total_campaigns_label.TabIndex = 4;
+            total_campaigns_label.Text = "0";
             // 
             // label5
             // 
@@ -1147,6 +1159,85 @@ namespace GARD
             addCampaign.ThemeAuthor = "Narwin";
             addCampaign.ThemeName = "MetroLite";
             addCampaign.Click += addCampaign_Click;
+            // 
+            // tabPage8
+            // 
+            tabPage8.Controls.Add(editorPanel);
+            tabPage8.Controls.Add(topPanel);
+            tabPage8.Location = new Point(4, 42);
+            tabPage8.Name = "tabPage8";
+            tabPage8.Size = new Size(1342, 634);
+            tabPage8.TabIndex = 7;
+            tabPage8.Text = "AI Email Builder";
+            // 
+            // editorPanel
+            // 
+            editorPanel.Dock = DockStyle.Fill;
+            editorPanel.Location = new Point(0, 40);
+            editorPanel.Name = "editorPanel";
+            editorPanel.Size = new Size(1342, 594);
+            editorPanel.SplitterDistance = 447;
+            editorPanel.TabIndex = 1;
+            // 
+            // topPanel
+            // 
+            topPanel.Controls.Add(loadingLabel);
+            topPanel.Controls.Add(generateButton);
+            topPanel.Controls.Add(promptBox);
+            topPanel.Dock = DockStyle.Top;
+            topPanel.Location = new Point(0, 0);
+            topPanel.Name = "topPanel";
+            topPanel.Size = new Size(1342, 40);
+            topPanel.TabIndex = 0;
+            // 
+            // loadingLabel
+            // 
+            loadingLabel.Font = new Font("Microsoft Sans Serif", 14F);
+            loadingLabel.IsDerivedStyle = true;
+            loadingLabel.Location = new Point(1175, 7);
+            loadingLabel.Name = "loadingLabel";
+            loadingLabel.Size = new Size(131, 27);
+            loadingLabel.Style = MetroSet_UI.Enums.Style.Light;
+            loadingLabel.StyleManager = null;
+            loadingLabel.TabIndex = 2;
+            loadingLabel.Text = "Generating...";
+            loadingLabel.ThemeAuthor = "Narwin";
+            loadingLabel.ThemeName = "MetroLite";
+            loadingLabel.Visible = false;
+            // 
+            // generateButton
+            // 
+            generateButton.DisabledBackColor = Color.FromArgb(120, 65, 177, 225);
+            generateButton.DisabledBorderColor = Color.FromArgb(120, 65, 177, 225);
+            generateButton.DisabledForeColor = Color.Gray;
+            generateButton.Font = new Font("Microsoft Sans Serif", 10F);
+            generateButton.HoverBorderColor = Color.FromArgb(95, 207, 255);
+            generateButton.HoverColor = Color.FromArgb(95, 207, 255);
+            generateButton.HoverTextColor = Color.White;
+            generateButton.IsDerivedStyle = true;
+            generateButton.Location = new Point(988, 7);
+            generateButton.Name = "generateButton";
+            generateButton.NormalBorderColor = Color.FromArgb(65, 177, 225);
+            generateButton.NormalColor = Color.FromArgb(65, 177, 225);
+            generateButton.NormalTextColor = Color.White;
+            generateButton.PressBorderColor = Color.FromArgb(35, 147, 195);
+            generateButton.PressColor = Color.FromArgb(35, 147, 195);
+            generateButton.PressTextColor = Color.White;
+            generateButton.Size = new Size(169, 27);
+            generateButton.Style = MetroSet_UI.Enums.Style.Light;
+            generateButton.StyleManager = null;
+            generateButton.TabIndex = 1;
+            generateButton.Text = "Generate Template";
+            generateButton.ThemeAuthor = "Narwin";
+            generateButton.ThemeName = "MetroLite";
+            // 
+            // promptBox
+            // 
+            promptBox.Location = new Point(3, 7);
+            promptBox.Name = "promptBox";
+            promptBox.PlaceholderText = "Give command for Gemini 2.0Pro model...";
+            promptBox.Size = new Size(969, 27);
+            promptBox.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -1941,6 +2032,11 @@ namespace GARD
             panelCampaignEditor.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
+            tabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)editorPanel).EndInit();
+            editorPanel.ResumeLayout(false);
+            topPanel.ResumeLayout(false);
+            topPanel.PerformLayout();
             tabPage4.ResumeLayout(false);
             tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvsubscribers).EndInit();
@@ -1979,7 +2075,7 @@ namespace GARD
         private Label label2;
         private Label label4;
         private Label label3;
-        private Button button2;
+        private Button SignUp;
         private Button button1;
         private CheckBox checkBox1;
         private MetroSetPanel metroSetPanel2;
@@ -2026,12 +2122,12 @@ namespace GARD
         private MetroSetComboBox filterSubs;
         private Label label18;
         private Label label19;
-        private Label label24;
-        private Label label21;
-        private Label label23;
+        private Label total_subscribers_label;
+        private Label total_email_logs_label;
+        private Label total_campaigns_label1;
         private Label label22;
-        private Label label20;
-        private Label label25;
+        private Label total_campaigns_label;
+        private Label total_email_logs_label1;
         private TabPage tabPage6;
         private TabPage tabPage7;
         private Label label26;
@@ -2082,5 +2178,11 @@ namespace GARD
         private Label label43;
         private Label label42;
         private Label label44;
+        private TabPage tabPage8;
+        private Panel topPanel;
+        private MetroSetButton generateButton;
+        private TextBox promptBox;
+        private SplitContainer editorPanel;
+        private MetroSetLabel loadingLabel;
     }
 }

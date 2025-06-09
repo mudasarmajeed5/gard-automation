@@ -17,6 +17,14 @@
           }
         }
       },
+      "FastColoredTextBox.Net6/1.0.0": {
+        "runtime": {
+          "lib/net6.0-windows7.0/FastColoredTextBox.dll": {
+            "assemblyVersion": "2.16.26.0",
+            "fileVersion": "2.16.26.0"
+          }
+        }
+      },
       "MetroSet_UI/2.0.0": {
         "runtime": {
           "lib/netcoreapp3.1/MetroSet UI.dll": {
@@ -135,6 +143,13 @@
       "sha512": "sha512-KMomv26cewTHkHENVKEajxM4EaFJw6fwXGsrdlncq5cdJGnWBHYMTRMuu7y2vbbyb8/VdxkYHlDwZa8mupDrww==",
       "path": "dynamicdata/9.1.2",
       "hashPath": "dynamicdata.9.1.2.nupkg.sha512"
+    },
+    "FastColoredTextBox.Net6/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tG7W1g74lddhHiJfrctCY5j6dNUskUc9CXFo3HG3A7u1JqzveUF5sRqSyFlO5LEbcCGXPbdeRap1fecXulQreg==",
+      "path": "fastcoloredtextbox.net6/1.0.0",
+      "hashPath": "fastcoloredtextbox.net6.1.0.0.nupkg.sha512"
     },
     "MetroSet_UI/2.0.0": {
       "type": "package",

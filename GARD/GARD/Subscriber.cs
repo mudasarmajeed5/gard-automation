@@ -8,9 +8,10 @@ namespace GARD
 {
     public partial class Form1 : MetroSetForm
     {
-        private int currentAdminId = -1;
+
+        private int currentSubscriberId = -1;
         List<Subscriber> allSubscribers = new List<Subscriber>();
-        async void loadSubscribers()
+        private async Task loadSubscribers()
         {
             if (currentAdminId == -1) return;
 

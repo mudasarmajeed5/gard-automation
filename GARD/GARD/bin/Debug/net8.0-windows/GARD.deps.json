@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "GARD/1.0.0": {
         "dependencies": {
+          "FastColoredTextBox.Net6": "1.0.0",
           "MetroSet_UI": "2.0.0",
           "Newtonsoft.Json": "13.0.3",
           "OxyPlot.WindowsForms": "2.2.0",
@@ -25,6 +26,14 @@
           "lib/net8.0/DynamicData.dll": {
             "assemblyVersion": "9.1.0.0",
             "fileVersion": "9.1.2.12211"
+          }
+        }
+      },
+      "FastColoredTextBox.Net6/1.0.0": {
+        "runtime": {
+          "lib/net6.0-windows7.0/FastColoredTextBox.dll": {
+            "assemblyVersion": "2.16.26.0",
+            "fileVersion": "2.16.26.0"
           }
         }
       },
@@ -144,6 +153,13 @@
       "sha512": "sha512-KMomv26cewTHkHENVKEajxM4EaFJw6fwXGsrdlncq5cdJGnWBHYMTRMuu7y2vbbyb8/VdxkYHlDwZa8mupDrww==",
       "path": "dynamicdata/9.1.2",
       "hashPath": "dynamicdata.9.1.2.nupkg.sha512"
+    },
+    "FastColoredTextBox.Net6/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tG7W1g74lddhHiJfrctCY5j6dNUskUc9CXFo3HG3A7u1JqzveUF5sRqSyFlO5LEbcCGXPbdeRap1fecXulQreg==",
+      "path": "fastcoloredtextbox.net6/1.0.0",
+      "hashPath": "fastcoloredtextbox.net6.1.0.0.nupkg.sha512"
     },
     "MetroSet_UI/2.0.0": {
       "type": "package",

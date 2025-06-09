@@ -18,6 +18,18 @@
           }
         }
       },
+      "FastColoredTextBox.Net6/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/FastColoredTextBox.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/FastColoredTextBox.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "MetroSet_UI/2.0.0": {
         "type": "package",
         "compile": {
@@ -219,6 +231,18 @@
         "lib/netstandard2.0/DynamicData.dll",
         "lib/netstandard2.0/DynamicData.xml",
         "logo.png"
+      ]
+    },
+    "FastColoredTextBox.Net6/1.0.0": {
+      "sha512": "tG7W1g74lddhHiJfrctCY5j6dNUskUc9CXFo3HG3A7u1JqzveUF5sRqSyFlO5LEbcCGXPbdeRap1fecXulQreg==",
+      "type": "package",
+      "path": "fastcoloredtextbox.net6/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastcoloredtextbox.net6.1.0.0.nupkg.sha512",
+        "fastcoloredtextbox.net6.nuspec",
+        "lib/net6.0-windows7.0/FastColoredTextBox.dll"
       ]
     },
     "MetroSet_UI/2.0.0": {
@@ -630,6 +654,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "FastColoredTextBox.Net6 >= 1.0.0",
       "MetroSet_UI >= 2.0.0",
       "Newtonsoft.Json >= 13.0.3",
       "OxyPlot.WindowsForms >= 2.2.0",
@@ -643,11 +668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj",
+      "projectUniqueName": "D:\\Downloads\\something\\gard-automation\\GARD\\GARD\\GARD.csproj",
       "projectName": "GARD",
-      "projectPath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\GARD.csproj",
+      "projectPath": "D:\\Downloads\\something\\gard-automation\\GARD\\GARD\\GARD.csproj",
       "packagesPath": "C:\\Users\\mudas\\.nuget\\packages\\",
-      "outputPath": "D:\\CODE\\C SHARP\\EmailAutomation\\gard-automation\\GARD\\GARD\\obj\\",
+      "outputPath": "D:\\Downloads\\something\\gard-automation\\GARD\\GARD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\VisualStudioSDK's\\NuGetPackages"
@@ -686,6 +711,10 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "FastColoredTextBox.Net6": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "MetroSet_UI": {
             "target": "Package",
             "version": "[2.0.0, )"
