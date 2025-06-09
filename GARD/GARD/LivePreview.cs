@@ -74,7 +74,7 @@ namespace GARD
 
         private async Task<string> GetGeminiDivHtmlAsync(string userPrompt)
         {
-            string apiKey = "AIzaSyCwFXt1s2ew-hY02qk1R_7v_doWB5hFpFY";
+            string apiKey = "PEEKING HERE?? GET YOUR OWNN KEYY!!";
             string url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={apiKey}";
 
             string fullPrompt =
