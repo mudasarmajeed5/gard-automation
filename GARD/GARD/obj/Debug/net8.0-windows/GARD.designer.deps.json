@@ -1,0 +1,232 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DynamicData/9.1.2": {
+        "dependencies": {
+          "System.Reactive": "6.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/DynamicData.dll": {
+            "assemblyVersion": "9.1.0.0",
+            "fileVersion": "9.1.2.12211"
+          }
+        }
+      },
+      "FastColoredTextBox.Net6/1.0.0": {
+        "runtime": {
+          "lib/net6.0-windows7.0/FastColoredTextBox.dll": {
+            "assemblyVersion": "2.16.26.0",
+            "fileVersion": "2.16.26.0"
+          }
+        }
+      },
+      "MetroSet_UI/2.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/MetroSet UI.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "OxyPlot.Core/2.2.0": {
+        "runtime": {
+          "lib/net8.0/OxyPlot.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "OxyPlot.WindowsForms/2.2.0": {
+        "dependencies": {
+          "OxyPlot.Core": "2.2.0"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/OxyPlot.WindowsForms.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "ReactiveUI/20.2.45": {
+        "dependencies": {
+          "DynamicData": "9.1.2",
+          "Splat": "15.3.1",
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Text.Json": "9.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/ReactiveUI.dll": {
+            "assemblyVersion": "20.2.0.0",
+            "fileVersion": "20.2.45.45496"
+          }
+        }
+      },
+      "Splat/15.3.1": {
+        "runtime": {
+          "lib/net8.0/Splat.dll": {
+            "assemblyVersion": "15.3.0.0",
+            "fileVersion": "15.3.1.27942"
+          }
+        }
+      },
+      "System.ComponentModel.Annotations/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.IO.Pipelines/9.0.2": {
+        "runtime": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6610"
+          }
+        }
+      },
+      "System.Reactive/6.0.1": {
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1.7420"
+          }
+        }
+      },
+      "System.Text.Encodings.Web/9.0.2": {
+        "runtime": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6610"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
+            "rid": "browser",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6610"
+          }
+        }
+      },
+      "System.Text.Json/9.0.2": {
+        "dependencies": {
+          "System.IO.Pipelines": "9.0.2",
+          "System.Text.Encodings.Web": "9.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6610"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DynamicData/9.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KMomv26cewTHkHENVKEajxM4EaFJw6fwXGsrdlncq5cdJGnWBHYMTRMuu7y2vbbyb8/VdxkYHlDwZa8mupDrww==",
+      "path": "dynamicdata/9.1.2",
+      "hashPath": "dynamicdata.9.1.2.nupkg.sha512"
+    },
+    "FastColoredTextBox.Net6/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tG7W1g74lddhHiJfrctCY5j6dNUskUc9CXFo3HG3A7u1JqzveUF5sRqSyFlO5LEbcCGXPbdeRap1fecXulQreg==",
+      "path": "fastcoloredtextbox.net6/1.0.0",
+      "hashPath": "fastcoloredtextbox.net6.1.0.0.nupkg.sha512"
+    },
+    "MetroSet_UI/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7FO1rFTiht/j+xdvyRBQOv3JL8yoKBwQrrBuA/Zbz98sNIhgpNDO977ZumAz6TTfbuIT/4waSHsFBp01cXDDIA==",
+      "path": "metroset_ui/2.0.0",
+      "hashPath": "metroset_ui.2.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "OxyPlot.Core/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QhXNdXR5FPpro/VoLx3BOp6AhQo7YrbfmWEZ9cgY+pnYM7RYORZjnu+aDMA8ka9A1r8hLkX//NbCPZNUv+l8qA==",
+      "path": "oxyplot.core/2.2.0",
+      "hashPath": "oxyplot.core.2.2.0.nupkg.sha512"
+    },
+    "OxyPlot.WindowsForms/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jkveaQ7d3PanUP6OKaZ+IXFPuwpyabifPQiQZ40pQls8Tuedf0mUZ8JcLkMltK5Jkj/JRwGP2cNn1oJ8NwaV3A==",
+      "path": "oxyplot.windowsforms/2.2.0",
+      "hashPath": "oxyplot.windowsforms.2.2.0.nupkg.sha512"
+    },
+    "ReactiveUI/20.2.45": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1wyThKtWNi0naldJBYcKcZWib2POzS+fVX28apHGTAl+Gd5iLzoDSlItvC22Yiy+hc8TB7KnkW47kofuXmBhmg==",
+      "path": "reactiveui/20.2.45",
+      "hashPath": "reactiveui.20.2.45.nupkg.sha512"
+    },
+    "Splat/15.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zyu98Mwp8gTi3MlS6EGtvcacmw5W/qA4/h/DVeZ28A1dR6mcM628ujHck6LK5SM6LwroR5LzBonWgeFtwo2Afg==",
+      "path": "splat/15.3.1",
+      "hashPath": "splat.15.3.1.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    },
+    "System.IO.Pipelines/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UIBaK7c/A3FyQxmX/747xw4rCUkm1BhNiVU617U5jweNJssNjLJkPUGhBsrlDG0BpKWCYKsncD+Kqpy4KmvZZQ==",
+      "path": "system.io.pipelines/9.0.2",
+      "hashPath": "system.io.pipelines.9.0.2.nupkg.sha512"
+    },
+    "System.Reactive/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
+      "path": "system.reactive/6.0.1",
+      "hashPath": "system.reactive.6.0.1.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/kCGdrXg0PXrvkHYyHubXJHcmCAvJrxTZ7g4XS6UCxY1JW79aMjtUW6UYNECHJmiyFZsZ/vUuWOM4CtNpiNt8Q==",
+      "path": "system.text.encodings.web/9.0.2",
+      "hashPath": "system.text.encodings.web.9.0.2.nupkg.sha512"
+    },
+    "System.Text.Json/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4TY2Yokh5Xp8XHFhsY9y84yokS7B0rhkaZCXuRiKppIiKwPVH4lVSFD9EEFzRpXdBM5ZeZXD43tc2vB6njEwwQ==",
+      "path": "system.text.json/9.0.2",
+      "hashPath": "system.text.json.9.0.2.nupkg.sha512"
+    }
+  }
+}

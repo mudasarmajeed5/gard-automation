@@ -13,11 +13,12 @@ namespace GARD
         public Form1()
         {
             InitializeComponent();
-            loadSubscribers();
             dgvsubscribers.CellClick += dgvsubscribers_CellClick;
             filterSubs.SelectedIndex = 0;
-            sub_status.SelectedIndex = 0;
+            sub_status.SelectedIndex = 0; 
             this.Load += Form1_Load;
+            pass_login.UseSystemPasswordChar = true;
+            pass_sign.UseSystemPasswordChar = true;
 
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -42,27 +43,51 @@ namespace GARD
 
         private async void signup_sign_Click(object sender, EventArgs e)
         {
+            string username = user_sign.Text.Trim();
+            string email = email_sign.Text.Trim();
+            string password = pass_sign.Text.Trim();
+
+            // Password constraint check
+            if (password.Length < 8 ||
+                !password.Any(char.IsUpper) ||
+                !password.Any(char.IsLower) ||
+                !password.Any(char.IsDigit) ||
+                !password.Any(ch => !char.IsLetterOrDigit(ch)))
+            {
+                MessageBox.Show("Password must be at least 8 characters long and include:\n- Uppercase letter\n- Lowercase letter\n- Number\n- Special character", "Weak Password", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             var signupData = new
             {
-                user_sign = user_sign.Text.Trim(),
-                email_sign = email_sign.Text.Trim(),
-                pass_sign = pass_sign.Text.Trim(),
+                user_sign = username,
+                email_sign = email,
+                pass_sign = password
             };
 
             string json = JsonSerializer.Serialize(signupData);
             StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PostAsync("http://localhost:5000/signup", content);
 
-            if (response.IsSuccessStatusCode)
+            try
             {
-                MessageBox.Show("Signup successful");
-                PageTabs.SelectedIndex = 1;
+                HttpResponseMessage response = await client.PostAsync("http://localhost:5000/signup", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Signup successful");
+                    PageTabs.SelectedIndex = 1;
+                }
+                else
+                {
+                    MessageBox.Show("Signup failed: " + response.ReasonPhrase);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Failed to sign up: " + response.StatusCode);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
+
 
 
 

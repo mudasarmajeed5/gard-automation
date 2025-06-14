@@ -22,6 +22,9 @@ def signup():
     if not all([username, email, password]):
         return jsonify({"error": "Missing required fields"}), 400
 
+    if '@' not in email:
+        return jsonify({"error": "Invalid email address"}), 400
+
     try:
         conn = connectDatabase()
         cursor = conn.cursor()

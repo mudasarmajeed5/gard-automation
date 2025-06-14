@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "M2+uiVP4cGk=",
+  "success": true,
+  "projectFilePath": "D:\\Downloads\\gard-automation\\GARD\\GARD\\GARD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mudas\\.nuget\\packages\\dynamicdata\\9.1.2\\dynamicdata.9.1.2.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\fastcoloredtextbox.net6\\1.0.0\\fastcoloredtextbox.net6.1.0.0.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\oxyplot.core\\2.2.0\\oxyplot.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\oxyplot.windowsforms\\2.2.0\\oxyplot.windowsforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\reactiveui\\20.2.45\\reactiveui.20.2.45.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\splat\\15.3.1\\splat.15.3.1.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\system.io.pipelines\\9.0.2\\system.io.pipelines.9.0.2.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\system.reactive\\6.0.1\\system.reactive.6.0.1.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\system.text.encodings.web\\9.0.2\\system.text.encodings.web.9.0.2.nupkg.sha512",
+    "C:\\Users\\mudas\\.nuget\\packages\\system.text.json\\9.0.2\\system.text.json.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
