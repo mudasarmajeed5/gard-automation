@@ -3,7 +3,7 @@
 ## How to Run
 
 ### 1. Backend (Flask + MySQL)
-- Edit `main.py` or config file to update **MySQL credentials** (host, user, password).
+- Edit `__initdb__.py` or config file to update **MySQL credentials** (host, user, password). Connection Credentials defined at line number 6
 - Run backend:
 - Open Terminal in root folder
 ```bash

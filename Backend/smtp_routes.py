@@ -2,9 +2,9 @@ from flask import Blueprint, jsonify, request
 from __init__db import connectDatabase
 import smtplib
 import re
+import traceback
 import ssl
 from email.mime.text import MIMEText
-import traceback
 from email.mime.multipart import MIMEMultipart
 smtp_bp = Blueprint("smtp", __name__, url_prefix="/smtp")
 
@@ -85,8 +85,6 @@ def save_smtp_settings():
         return jsonify({"error": str(e)}), 500
 
 smtp_cache = {}
-
-import traceback
 
 @smtp_bp.route("/send/<email>", methods=["POST"])
 def send_email(email):

@@ -6,7 +6,7 @@ def connectDatabase():
         host="localhost", user="root", password="Mine@7137", database="gard"
     )
 
-def initdb(host="localhost", user="root", password="Mine@7137"):
+def initdb():
     """
     Initialize the gard database with all required tables.
 
@@ -18,17 +18,12 @@ def initdb(host="localhost", user="root", password="Mine@7137"):
     Returns:
         bool: True if successful, False otherwise
     """
-
     connection = None
     cursor = None
 
     try:
         # Connect to MySQL server
-        connection = mysql.connector.connect(
-            host=host,
-            user=user,
-            password=password,
-        )
+        connection = connectDatabase()
 
         if connection.is_connected():
             cursor = connection.cursor()

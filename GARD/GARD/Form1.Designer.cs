@@ -160,6 +160,7 @@ namespace GARD
             smtp_server = new TextBox();
             GOOGLEIMG = new PictureBox();
             SQLIMG = new PictureBox();
+            copy_html = new MetroSetButton();
             PageTabs.SuspendLayout();
             tabPage6.SuspendLayout();
             metroSetPanel8.SuspendLayout();
@@ -1181,6 +1182,7 @@ namespace GARD
             // 
             // topPanel
             // 
+            topPanel.Controls.Add(copy_html);
             topPanel.Controls.Add(loadingLabel);
             topPanel.Controls.Add(generateButton);
             topPanel.Controls.Add(promptBox);
@@ -1983,6 +1985,33 @@ namespace GARD
             SQLIMG.TabIndex = 11;
             SQLIMG.TabStop = false;
             // 
+            // copy_html
+            // 
+            copy_html.DisabledBackColor = Color.FromArgb(120, 65, 177, 225);
+            copy_html.DisabledBorderColor = Color.FromArgb(120, 65, 177, 225);
+            copy_html.DisabledForeColor = Color.Gray;
+            copy_html.Font = new Font("Microsoft Sans Serif", 10F);
+            copy_html.HoverBorderColor = Color.FromArgb(95, 207, 255);
+            copy_html.HoverColor = Color.FromArgb(95, 207, 255);
+            copy_html.HoverTextColor = Color.White;
+            copy_html.IsDerivedStyle = true;
+            copy_html.Location = new Point(1175, 7);
+            copy_html.Name = "copy_html";
+            copy_html.NormalBorderColor = Color.FromArgb(65, 177, 225);
+            copy_html.NormalColor = Color.FromArgb(65, 177, 225);
+            copy_html.NormalTextColor = Color.White;
+            copy_html.PressBorderColor = Color.FromArgb(35, 147, 195);
+            copy_html.PressColor = Color.FromArgb(35, 147, 195);
+            copy_html.PressTextColor = Color.White;
+            copy_html.Size = new Size(152, 27);
+            copy_html.Style = MetroSet_UI.Enums.Style.Light;
+            copy_html.StyleManager = null;
+            copy_html.TabIndex = 3;
+            copy_html.Text = "Copy HTML";
+            copy_html.ThemeAuthor = "Narwin";
+            copy_html.ThemeName = "MetroLite";
+            copy_html.Click += copy_html_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 20F);
@@ -2184,5 +2213,6 @@ namespace GARD
         private TextBox promptBox;
         private SplitContainer editorPanel;
         private MetroSetLabel loadingLabel;
+        private MetroSetButton copy_html;
     }
 }

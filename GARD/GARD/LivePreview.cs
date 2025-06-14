@@ -9,6 +9,7 @@ namespace GARD
         private FastColoredTextBox htmlEditor;
         private WebBrowser previewBrowser;
 
+
         private void SetupEditorPanels()
         {
             // Initialize FastColoredTextBox for HTML editing
@@ -19,12 +20,22 @@ namespace GARD
                 AutoIndent = true,
                 Dock = DockStyle.Fill,
                 ReadOnly = false,
-                Enabled = true,         
-                BackColor = System.Drawing.Color.White, 
+                Enabled = true,
+                BackColor = System.Drawing.Color.White,
             };
 
+            htmlEditor.KeyDown += (s, e) =>
+            {
+                if (e.Control && e.KeyCode == Keys.C)
+                {
+                    if (htmlEditor.SelectionLength > 0)
+                    {
+                        Clipboard.SetText(htmlEditor.SelectedText);
+                        e.Handled = true;
+                    }
+                }
+            };
 
-            // Initialize WebBrowser for live HTML preview
             previewBrowser = new WebBrowser
             {
                 Name = "previewBrowser",
@@ -34,6 +45,9 @@ namespace GARD
             // Add controls to the appropriate panels of the SplitContainer
             editorPanel.Panel1.Controls.Add(htmlEditor);
             editorPanel.Panel2.Controls.Add(previewBrowser);
+
+            // Set initial visibility
+            copy_html.Visible = false;
 
             // Event hookup
             htmlEditor.TextChanged += (s, e) =>
@@ -53,6 +67,8 @@ namespace GARD
             }
 
             generateButton.Enabled = false;
+            generateButton.Visible = false;
+            copy_html.Visible = false;
             loadingLabel.Visible = true;
 
             try
@@ -69,18 +85,25 @@ namespace GARD
             {
                 loadingLabel.Visible = false;
                 generateButton.Enabled = true;
+                copy_html.Visible = true;
+
+                if (!string.IsNullOrEmpty(htmlEditor.Text))
+                {
+                    Clipboard.SetText(htmlEditor.Text);
+                }
             }
+            generateButton.Visible = true;
         }
 
         private async Task<string> GetGeminiDivHtmlAsync(string userPrompt)
         {
-            string apiKey = "PEEKING HERE?? GET YOUR OWNN KEYY!!";
+            string apiKey = "AIzaSyCwFXt1s2ew-hY02qk1R_7v_doWB5hFpFY";
             string url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={apiKey}";
 
             string fullPrompt =
                 "Generate only the raw inner HTML of a div container with inline styles for an email marketing campaign based on: " +
                 userPrompt;
-
+            
             var body = new
             {
                 contents = new[]
@@ -121,6 +144,14 @@ namespace GARD
             string rawOutput = textProperty.GetString();
 
             return CleanOutput(rawOutput);
+        }
+        private void copy_html_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(htmlEditor.Text))
+            {
+                Clipboard.SetText(htmlEditor.Text);
+                MessageBox.Show("Copied to clipboard!");
+            }
         }
 
         private string CleanOutput(string raw)

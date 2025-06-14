@@ -36,7 +36,6 @@ namespace GARD
 
         private async void saveCampaign_Click(object sender, EventArgs e)
         {
-            saveCampaign.Enabled = false;
             string campaignName = txtCampaignName.Text.Trim();
             string contentText = campaignContent.Text.Trim();
 
@@ -77,10 +76,7 @@ namespace GARD
             {
                 MessageBox.Show("Error occurred while saving campaign: " + ex.Message);
             }
-            finally
-            {
-                saveCampaign.Enabled = false;
-            }
+            
         }
 
 

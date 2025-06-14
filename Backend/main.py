@@ -81,7 +81,7 @@ def admin_login():
 
 
 print("Initializing database...")
-success = initdb(host="localhost", user="root", password="Mine@7137")
+success = initdb()
 print(
     "Database initialization completed!"
     if success
